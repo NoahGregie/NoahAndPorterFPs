@@ -12,7 +12,7 @@ public class InputManeger : MonoBehaviour
     void Awake()
     {
         playerInput = new PlayerInput();
-        onFoot = PlayerInput.OnFoot;
+        onFoot = playerInput.OnFoot;
         motor = GetComponent<PlayerMotor>();
     }
 
