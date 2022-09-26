@@ -259,7 +259,7 @@ Transform:
   - {fileID: 808550052}
   - {fileID: 1921913965}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &749335715
 GameObject:
@@ -356,7 +356,7 @@ RectTransform:
   - {fileID: 1648496269}
   - {fileID: 2017670044}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -593,7 +593,7 @@ Transform:
   m_Children:
   - {fileID: 88787589}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0.032, y: 0.076, z: 0.27}
 --- !u!114 &1391966018
 MonoBehaviour:
@@ -669,7 +669,7 @@ Transform:
   m_Children:
   - {fileID: 1874385068}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1633718826
 PrefabInstance:
@@ -749,6 +749,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4ce00b7edce2114b99c2fc8921d1926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  useEvents: 0
   promptMessage: Use Steamtank
   door: {fileID: 0}
 --- !u!95 &1633718832
@@ -866,7 +867,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1648496268
 GameObject:
@@ -1207,6 +1208,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4ce00b7edce2114b99c2fc8921d1926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  useEvents: 0
   promptMessage: jlksdfafsdahjfsdajdskljflksadjflksadjflksadjfl;ksadjlkfjaslkfjlkasdjfl;ksadjfl;ksadjflsadhfoishadoifjsdafjska
   door: {fileID: 260137428}
 --- !u!1 &1921913964
@@ -1382,8 +1384,65 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1982476161
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 28f53fd106a8a0944842919630a5bda3, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 28f53fd106a8a0944842919630a5bda3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.0879593
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 28f53fd106a8a0944842919630a5bda3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.49666032
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 28f53fd106a8a0944842919630a5bda3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.526619
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 28f53fd106a8a0944842919630a5bda3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 28f53fd106a8a0944842919630a5bda3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.000000081460335
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 28f53fd106a8a0944842919630a5bda3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -4.1359026e-25
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 28f53fd106a8a0944842919630a5bda3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 1.861156e-24
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 28f53fd106a8a0944842919630a5bda3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 28f53fd106a8a0944842919630a5bda3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 28f53fd106a8a0944842919630a5bda3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 28f53fd106a8a0944842919630a5bda3, type: 3}
+      propertyPath: m_Name
+      value: emp_greatsword_anim_test_D Questionablke
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 28f53fd106a8a0944842919630a5bda3, type: 3}
 --- !u!1 &2017670043
 GameObject:
   m_ObjectHideFlags: 0
