@@ -62,6 +62,15 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Sprint"",
+                    ""type"": ""Value"",
+                    ""id"": ""9b688a63-e587-4b30-b035-473923a32449"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
                 }
             ],
             ""bindings"": [
@@ -152,6 +161,61 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
                     ""action"": ""Interact"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""WASD"",
+                    ""id"": ""ea336f5c-703a-48fc-b81f-2022f2b786c0"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Sprint"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""40435b2d-33be-4386-a925-bfc9791279cb"",
+                    ""path"": ""W"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Sprint"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""085ef85e-55ce-4e5c-8e71-83ca6947be81"",
+                    ""path"": ""S"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Sprint"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""b44025c1-1693-4075-9bd3-225f7abd1824"",
+                    ""path"": ""A"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Sprint"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""c610a5e9-0bef-48ef-88d9-706e3bf89099"",
+                    ""path"": ""<Keyboard>/d"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Sprint"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
                 }
             ]
         },
@@ -680,6 +744,7 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
         m_OnFoot_Jump = m_OnFoot.FindAction("Jump", throwIfNotFound: true);
         m_OnFoot_Look = m_OnFoot.FindAction("Look", throwIfNotFound: true);
         m_OnFoot_Interact = m_OnFoot.FindAction("Interact", throwIfNotFound: true);
+        m_OnFoot_Sprint = m_OnFoot.FindAction("Sprint", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -755,6 +820,7 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
     private readonly InputAction m_OnFoot_Jump;
     private readonly InputAction m_OnFoot_Look;
     private readonly InputAction m_OnFoot_Interact;
+    private readonly InputAction m_OnFoot_Sprint;
     public struct OnFootActions
     {
         private @PlayerInput m_Wrapper;
@@ -763,6 +829,7 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
         public InputAction @Jump => m_Wrapper.m_OnFoot_Jump;
         public InputAction @Look => m_Wrapper.m_OnFoot_Look;
         public InputAction @Interact => m_Wrapper.m_OnFoot_Interact;
+        public InputAction @Sprint => m_Wrapper.m_OnFoot_Sprint;
         public InputActionMap Get() { return m_Wrapper.m_OnFoot; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -784,6 +851,9 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
                 @Interact.started -= m_Wrapper.m_OnFootActionsCallbackInterface.OnInteract;
                 @Interact.performed -= m_Wrapper.m_OnFootActionsCallbackInterface.OnInteract;
                 @Interact.canceled -= m_Wrapper.m_OnFootActionsCallbackInterface.OnInteract;
+                @Sprint.started -= m_Wrapper.m_OnFootActionsCallbackInterface.OnSprint;
+                @Sprint.performed -= m_Wrapper.m_OnFootActionsCallbackInterface.OnSprint;
+                @Sprint.canceled -= m_Wrapper.m_OnFootActionsCallbackInterface.OnSprint;
             }
             m_Wrapper.m_OnFootActionsCallbackInterface = instance;
             if (instance != null)
@@ -800,6 +870,9 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
                 @Interact.started += instance.OnInteract;
                 @Interact.performed += instance.OnInteract;
                 @Interact.canceled += instance.OnInteract;
+                @Sprint.started += instance.OnSprint;
+                @Sprint.performed += instance.OnSprint;
+                @Sprint.canceled += instance.OnSprint;
             }
         }
     }
@@ -915,6 +988,7 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
         void OnJump(InputAction.CallbackContext context);
         void OnLook(InputAction.CallbackContext context);
         void OnInteract(InputAction.CallbackContext context);
+        void OnSprint(InputAction.CallbackContext context);
     }
     public interface IUIActions
     {
