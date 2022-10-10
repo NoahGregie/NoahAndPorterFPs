@@ -19,7 +19,15 @@ public class PlayerMotor : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        isGrounded = controller.isGrounded; 
+        isGrounded = controller.isGrounded;
+        if (Input.GetKey(KeyCode.LeftShift)){
+
+            speed = 100f;
+        }
+        else
+        {
+            speed = 5f;
+        }
     }
     public void ProcessMove(Vector2 input)
     {

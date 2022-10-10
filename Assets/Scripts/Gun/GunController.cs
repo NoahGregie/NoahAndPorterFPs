@@ -10,6 +10,10 @@ public class GunController : MonoBehaviour
     public int clipSize = 30;
     public int reservedAmmoCapticity = 270;
 
+
+    //enemyHealth
+    public int Health = 5;
+
     //varaibeles that change throughout code
     bool canShoot;
     int currentAmmonInClip;
@@ -148,8 +152,19 @@ public class GunController : MonoBehaviour
             try {
                 Debug.Log("Hit A Enemy");
                 Rigidbody rb = hit.transform.GetComponent<Rigidbody>();
+                MeshRenderer mr = hit.transform.GetComponent<MeshRenderer>();
+                CapsuleCollider cc = hit.transform.GetComponent<CapsuleCollider>();
+                MeshFilter mf = hit.transform.GetComponent<MeshFilter>();
                 rb.constraints = RigidbodyConstraints.None;
                 rb.AddForce(transform.parent.transform.forward * 500);
+                Health--;
+                if (Health <= 0)
+                {
+                    Destroy(mr );
+                    Destroy(rb);
+                    Destroy(cc);
+                    Destroy(mf);
+                }
             
             }
             catch { }
