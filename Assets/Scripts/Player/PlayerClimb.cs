@@ -7,6 +7,7 @@ public class PlayerClimb : MonoBehaviour
     [Header("Refrences")]
     public Transform orientation;
     public Rigidbody rb;
+    public PlayerMotor pm;
     public LayerMask whatIsWall;
 
     [Header("Climbing")]
@@ -24,19 +25,77 @@ public class PlayerClimb : MonoBehaviour
 
     private RaycastHit frontWallHit;
     private bool wallFront;
-    
 
-    private void wallCheck()
+
+    private void Update()
     {
+
+        WallCheck();
+        StateMachine();
+
+        if (climbing) ClimbingMovement();
+
+
+
+    }
+
+    private void StateMachine()
+    {
+        //state1-climing
+        if (wallFront && Input.GetKey(KeyCode.W) && wallLookAngle < maxWallLookAngle)
+        {
+
+            if (!climbing && climbTimer > 0) StartClimbing();
+            //timer
+            if (climbTimer > 0) climbTimer -= Time.deltaTime;
+            if (climbTimer < 0) StopClimbing();
+        }
+        //state 3 none
+        else
+        {
+            if (climbing) StopClimbing();
+
+        }
 
 
 
 
     }
 
+    private void WallCheck()
+    {
+
+        wallFront = Physics.SphereCast(transform.position, sphereCastRadius, orientation.forward, out frontWallHit, detectionLength, whatIsWall);
+        wallLookAngle = Vector3.Angle(orientation.forward, -frontWallHit.normal);
+        if (pm.isGrounded)
+        {
+            climbTimer = maxClimbTime;
+
+        }
+    }
+
+    private void StartClimbing()
+    {
+        climbing = true;
+
+    }
 
 
 
+    private void ClimbingMovement()
+    {
+        rb.velocity = new Vector3(rb.velocity.x, climbSpeed, rb.velocity.z);
+
+
+    }
+
+    private void StopClimbing()
+    {
+        climbing = false;
+
+
+
+    }
 
 
 
