@@ -157,15 +157,17 @@ public class GunController : MonoBehaviour
                 MeshFilter mf = hit.transform.GetComponent<MeshFilter>();
                 rb.constraints = RigidbodyConstraints.None;
                 rb.AddForce(transform.parent.transform.forward * 500);
-                Health--;
-                if (Health <= 0)
-                {
-                    Destroy(mr );
-                    Destroy(rb);
-                    Destroy(cc);
-                    Destroy(mf);
-                }
-            
+                EnemyHealth EnemyHealth = hit.collider.GetComponent<EnemyHealth>();
+                EnemyHealth.AddjustCurrentHealth(-1);
+                //Health--;
+                // if (Health == 0)
+                // {
+                //   Destroy(mr );
+                //    Destroy(rb);
+                //    Destroy(cc);
+                //   Destroy(mf);
+                //}
+
             }
             catch { }
 
