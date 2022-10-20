@@ -7,7 +7,7 @@ public class PlayerClimb : MonoBehaviour
     [Header("Refrences")]
     public Transform orientation;
     public Rigidbody rb;
-    public PlayerMotor pm;
+    public movemen pm;
     public LayerMask whatIsWall;
 
     [Header("Climbing")]
@@ -67,7 +67,7 @@ public class PlayerClimb : MonoBehaviour
 
         wallFront = Physics.SphereCast(transform.position, sphereCastRadius, orientation.forward, out frontWallHit, detectionLength, whatIsWall);
         wallLookAngle = Vector3.Angle(orientation.forward, -frontWallHit.normal);
-        if (pm.isGrounded)
+        if (pm.grounded)
         {
             climbTimer = maxClimbTime;
 
