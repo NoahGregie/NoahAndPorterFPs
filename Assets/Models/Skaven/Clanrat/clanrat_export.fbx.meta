@@ -20,6 +20,26 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: skv_clan_rats_head_011.001
     second: {fileID: 2100000, guid: aa7b84d795c637b408b604440c1b743c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: skv_clan_rats_legs_010.001
+    second: {fileID: 2100000, guid: 13075fa683624e942bc21d862afaca46, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: skv_clan_rats_legs_011.001
+    second: {fileID: 2100000, guid: 13075fa683624e942bc21d862afaca46, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: skv_clan_rats_torso_010.002
+    second: {fileID: 2100000, guid: 6acb7304db95f8341b4130b131e77c08, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: skv_clan_rats_torso_011.002
+    second: {fileID: 2100000, guid: 6acb7304db95f8341b4130b131e77c08, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
