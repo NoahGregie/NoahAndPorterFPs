@@ -9,6 +9,13 @@ public class movemen : MonoBehaviour
     private float moveSpeed;
     public float walkSpeed;
     public float sprintSpeed;
+    public float slideSpeed;
+
+    private float desiredMoveSpeed;
+    private float lastDeseriedMoveSpeed;
+
+
+    public Camera cam;
 
     public float groundDrag;
 
@@ -49,10 +56,12 @@ public class movemen : MonoBehaviour
         walking,
         sprinting,
         crouching,
+        sliding,
         air
 
     }
 
+    public bool sliding;
 
     private void Start()
     {
@@ -61,6 +70,7 @@ public class movemen : MonoBehaviour
 
         readyToJump = true;
 
+        
         startYScale = transform.localScale.y;
     }
 
@@ -117,20 +127,31 @@ public class movemen : MonoBehaviour
 
     private void StateHandler()
     {
+        //slding
+        if (sliding)
+        {
+            state = MovementState.sliding;
+            moveSpeed = slideSpeed;
+            cam.fieldOfView = 90f;
+
+        }
+
 
         //crouchiung
-        if (Input.GetKey(crouchKey))
+       else if (Input.GetKey(crouchKey))
         {
 
             state = MovementState.crouching;
             moveSpeed = crouchSpeed;
+            cam.fieldOfView = 90f;
         }
 
         //move-Sprinting
-        if (grounded && Input.GetKey(sprintKey))
+       else if (grounded && Input.GetKey(sprintKey))
         {
             state = MovementState.sprinting;
             moveSpeed = sprintSpeed;
+            cam.fieldOfView = 120f;
         }
 
         //walking
@@ -139,12 +160,13 @@ public class movemen : MonoBehaviour
 
             state = MovementState.walking;
             moveSpeed = walkSpeed;
+            cam.fieldOfView = 90f;
         }
         //air
         else
         {
             state = MovementState.air;
-
+            cam.fieldOfView = 90f;
         }
 
     }
