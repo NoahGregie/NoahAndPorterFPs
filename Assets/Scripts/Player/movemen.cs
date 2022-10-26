@@ -15,7 +15,7 @@ public class movemen : MonoBehaviour
     private float lastDeseriedMoveSpeed;
 
 
-    public Camera cam;
+  
 
     public float groundDrag;
 
@@ -132,7 +132,7 @@ public class movemen : MonoBehaviour
         {
             state = MovementState.sliding;
             moveSpeed = slideSpeed;
-            cam.fieldOfView = 90f;
+          
 
         }
 
@@ -143,7 +143,7 @@ public class movemen : MonoBehaviour
 
             state = MovementState.crouching;
             moveSpeed = crouchSpeed;
-            cam.fieldOfView = 90f;
+            
         }
 
         //move-Sprinting
@@ -151,7 +151,7 @@ public class movemen : MonoBehaviour
         {
             state = MovementState.sprinting;
             moveSpeed = sprintSpeed;
-            cam.fieldOfView = 120f;
+           
         }
 
         //walking
@@ -160,13 +160,13 @@ public class movemen : MonoBehaviour
 
             state = MovementState.walking;
             moveSpeed = walkSpeed;
-            cam.fieldOfView = 90f;
+            
         }
         //air
         else
         {
             state = MovementState.air;
-            cam.fieldOfView = 90f;
+            
         }
 
     }

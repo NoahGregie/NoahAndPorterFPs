@@ -6,7 +6,7 @@ public class EnemyHomingScript : MonoBehaviour
 {
 
     public Transform target;
-    public float speed = 5f;
+    public float speed;
     Rigidbody rig;
     
    
@@ -20,7 +20,7 @@ public class EnemyHomingScript : MonoBehaviour
     void FixedUpdate()
     {
 
-
+        speed = Random.Range(2, 6);
         //makes enemy moves tword charcter
         Vector3 pos = Vector3.MoveTowards(transform.position, target.position, speed * Time.fixedDeltaTime);
        

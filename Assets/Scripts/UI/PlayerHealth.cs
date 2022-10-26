@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
-   
+
     private float health;
     private float lerpTimer;
     [Header("Health Bar")]
@@ -18,13 +18,15 @@ public class PlayerHealth : MonoBehaviour
     public float duration;
     public float fadeSpeed;
 
+    
+
 
     private float durationTimer;
     // Start is called before the first frame update
     void Start()
     {
         health = maxHealth;
-        overlay.color = new Color(overlay.color.r, overlay.color.g, overlay.color.b,0);
+        overlay.color = new Color(overlay.color.r, overlay.color.g, overlay.color.b, 0);
     }
 
     // Update is called once per frame
@@ -32,12 +34,12 @@ public class PlayerHealth : MonoBehaviour
     {
         health = Mathf.Clamp(health, 0, maxHealth);
         UpdateHealthUI();
-        if(overlay.color.a > 0)
+        if (overlay.color.a > 0)
         {
             if (health < 30)
                 return;
             durationTimer += Time.deltaTime;
-            if(durationTimer > duration)
+            if (durationTimer > duration)
             {
                 //fade thge image
                 float tempAlpha = overlay.color.a;
@@ -45,7 +47,11 @@ public class PlayerHealth : MonoBehaviour
                 overlay.color = new Color(overlay.color.r, overlay.color.g, overlay.color.b, tempAlpha);
             }
         }
-        
+
+        if(health <= 0)
+        {
+            UnityEditor.EditorApplication.isPlaying = false;
+        }
     }
     public void UpdateHealthUI()
     {
@@ -54,7 +60,7 @@ public class PlayerHealth : MonoBehaviour
         float fillF = frontHealthBar.fillAmount;
         float fillB = backHealthBar.fillAmount;
         float hFraction = health / maxHealth;
-        if(fillB > hFraction)
+        if (fillB > hFraction)
         {
             frontHealthBar.fillAmount = hFraction;
             backHealthBar.color = Color.red;
@@ -71,7 +77,7 @@ public class PlayerHealth : MonoBehaviour
             float precentComplete = lerpTimer / chipSpeed;
             precentComplete = precentComplete * precentComplete;
             frontHealthBar.fillAmount = Mathf.Lerp(fillF, backHealthBar.fillAmount, precentComplete);
-    
+
         }
     }
     public void TakeDamage(float damage)
@@ -81,6 +87,7 @@ public class PlayerHealth : MonoBehaviour
         lerpTimer = 0f;
         durationTimer = 0;
         overlay.color = new Color(overlay.color.r, overlay.color.g, overlay.color.b, 1);
+       
     }
     public void ResoreHealth(float healAmount)
     {
@@ -88,4 +95,17 @@ public class PlayerHealth : MonoBehaviour
         health += healAmount;
         lerpTimer = 0f;
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.collider.gameObject.CompareTag("Enemy"))
+        {
+            TakeDamage(20);
+        }
+    }
+
+
+
+
+
 }
