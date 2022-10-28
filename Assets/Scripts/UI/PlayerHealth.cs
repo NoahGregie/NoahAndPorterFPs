@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -37,7 +38,8 @@ public class PlayerHealth : MonoBehaviour
         if (overlay.color.a > 0)
         {
             if (health < 30)
-                return;
+               // StartCoroutine(HealHealth());
+            return;
             durationTimer += Time.deltaTime;
             if (durationTimer > duration)
             {
@@ -48,11 +50,18 @@ public class PlayerHealth : MonoBehaviour
             }
         }
 
-        if(health <= 0)
-        {
-            UnityEditor.EditorApplication.isPlaying = false;
-        }
+       
     }
+
+    IEnumerator HealHealth()
+    {
+      
+        
+        yield return new WaitForSecondsRealtime(3.0f);
+        ResoreHealth(30);
+    }
+    
+
     public void UpdateHealthUI()
     {
 

@@ -43,7 +43,7 @@ public class GunController : MonoBehaviour
     //you only need to assign this if randmoize recoil is off.
     public Vector2 recoilPattern;
 
-    
+    movemen pm;
 
     private void Start()
     {
@@ -57,8 +57,8 @@ public class GunController : MonoBehaviour
        
         DetermineAim();
 
-        //if this is on, you cant shoot for somereason
-       //DetermineRotation();
+        DetermineRecoil();
+       
 
 
        if(Input.GetMouseButton(0) && canShoot && currentAmmonInClip > 0)
@@ -87,17 +87,17 @@ public class GunController : MonoBehaviour
     }
     void DetermineRotation()
     {
-        Vector2 mouseAxis = new Vector2(Input.GetAxisRaw("Mouse x"), Input.GetAxisRaw("Mouse y"));
+       Vector2 mouseAxis = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
 
-        mouseAxis *= mouseSensitivity;
-        currentRotation += mouseAxis;
+       mouseAxis *= mouseSensitivity;
+       currentRotation += mouseAxis;
 
-        currentRotation.y = Mathf.Clamp(currentRotation.y, -90, 90);
+       currentRotation.y = Mathf.Clamp(currentRotation.y, -90, 90);
 
-        transform.localPosition += (Vector3)mouseAxis * weaponsSwayAmount / 1000;
+       transform.localPosition += (Vector3)mouseAxis * weaponsSwayAmount / 1000;
 
-        transform.root.localRotation = Quaternion.AngleAxis(currentRotation.x, Vector3.up);
-        transform.parent.localRotation = Quaternion.AngleAxis(-currentRotation.y, Vector3.right);
+       transform.root.localRotation = Quaternion.AngleAxis(currentRotation.x, Vector3.up);
+       transform.parent.localRotation = Quaternion.AngleAxis(-currentRotation.y, Vector3.right);
     }
     void DetermineAim()
     {
