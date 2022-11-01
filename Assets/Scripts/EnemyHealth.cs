@@ -7,7 +7,7 @@ public class EnemyHealth : MonoBehaviour
 
     public float currentHealth = 10f;
     public float maxHealth = 10f;
-
+   
     public bool isDead;
 
     void Update()
@@ -37,7 +37,6 @@ public class EnemyHealth : MonoBehaviour
         if (isDead == true)
         {
             Destroy(gameObject);
-
 
         }
         

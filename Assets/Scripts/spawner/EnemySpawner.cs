@@ -8,6 +8,8 @@ public class EnemySpawner : MonoBehaviour
     public int xPos;
     public int zPos;
     public int enemyCount;
+    public GameObject finalBoss;
+    public int secondEnemyCount;
 
 
      void Start()
@@ -17,13 +19,19 @@ public class EnemySpawner : MonoBehaviour
 
     IEnumerator EnemyDrop()
     {
-        while (enemyCount < 250)
+        while (enemyCount < 10)
         {
             xPos = Random.Range(-43, 2);
-            zPos = Random.Range(171, 250);
+            zPos = Random.Range(171, 200);
             Instantiate(theEnemy, new Vector3(xPos, 1, zPos), Quaternion.identity);
             yield return new WaitForSeconds(0.00000000001f);
             enemyCount += 1;
+        }
+        if (enemyCount == 10)
+        {
+
+            Instantiate(finalBoss, new Vector3(-22, 1, 170), Quaternion.identity);
+
         }
     }
 

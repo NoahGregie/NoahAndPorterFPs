@@ -51,6 +51,8 @@ public class movemen : MonoBehaviour
     Rigidbody rb;
 
     public MovementState state;
+
+    public bool crouch;
     public enum MovementState
     {
         walking,
@@ -117,12 +119,13 @@ public class movemen : MonoBehaviour
 
             transform.localScale = new Vector3(transform.localScale.x, crouchYScale, transform.localScale.z);
             rb.AddForce(Vector3.down * 5f, ForceMode.Impulse);
+            crouch = true;
         }
         //stop crouch
         if (Input.GetKeyUp(crouchKey))
         {
             transform.localScale = new Vector3(transform.localScale.x,startYScale, transform.localScale.z);
-
+            crouch = false;
         }
     }
 
