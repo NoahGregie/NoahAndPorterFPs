@@ -31,8 +31,10 @@ public class EnemyHomingScript : MonoBehaviour
       //  else
       //  {
             Vector3 pos = Vector3.MoveTowards(transform.position, target.position, speed * Time.fixedDeltaTime);
+      
 
-            rig.MovePosition(pos);
+
+        rig.MovePosition(pos);
             transform.LookAt(target);
         //}
        
