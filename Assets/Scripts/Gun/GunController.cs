@@ -19,7 +19,14 @@ public class GunController : MonoBehaviour
     int currentAmmonInClip;
     int ammoInReserve;
 
+    //cam
+    public float sensX;
+    public float sensY;
 
+    public Transform oreintation;
+
+    float xRotation;
+    float yRotation;
 
     //muzzleFlash
     public Image muzzleFlashImage;
@@ -54,14 +61,15 @@ public class GunController : MonoBehaviour
 
     private void Update()
     {
-       
+
         DetermineAim();
 
-        DetermineRecoil();
-       
 
 
-       if(Input.GetMouseButton(0) && canShoot && currentAmmonInClip > 0)
+    //  DetermineRotation();
+
+
+        if (Input.GetMouseButton(0) && canShoot && currentAmmonInClip > 0)
         {
             canShoot = false;
             currentAmmonInClip--;
@@ -87,17 +95,25 @@ public class GunController : MonoBehaviour
     }
     void DetermineRotation()
     {
-       Vector2 mouseAxis = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+        Vector2 mouseAxis = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
 
-       mouseAxis *= mouseSensitivity;
-       currentRotation += mouseAxis;
+        mouseAxis *= mouseSensitivity;
+        currentRotation += mouseAxis;
 
-       currentRotation.y = Mathf.Clamp(currentRotation.y, -90, 90);
+        currentRotation.y = Mathf.Clamp(currentRotation.y, -90, 90);
 
-       transform.localPosition += (Vector3)mouseAxis * weaponsSwayAmount / 1000;
+        transform.localPosition += (Vector3)mouseAxis * weaponsSwayAmount / 1000;
 
-       transform.root.localRotation = Quaternion.AngleAxis(currentRotation.x, Vector3.up);
-       transform.parent.localRotation = Quaternion.AngleAxis(-currentRotation.y, Vector3.right);
+        transform.root.localRotation = Quaternion.AngleAxis(currentRotation.x, Vector3.up);
+        transform.parent.localRotation = Quaternion.AngleAxis(-currentRotation.y, Vector3.right); 
+
+
+
+
+
+
+
+
     }
     void DetermineAim()
     {
@@ -139,7 +155,7 @@ public class GunController : MonoBehaviour
     {
         muzzleFlashImage.sprite = flashes[Random.Range(0, flashes.Length)];
         muzzleFlashImage.color = Color.white;
-        yield return new WaitForSeconds(0.05f);
+        yield return new WaitForSeconds(0.0005f);
         muzzleFlashImage.sprite = null;
         muzzleFlashImage.color = new Color(0,0,0,0);
     }
@@ -156,7 +172,7 @@ public class GunController : MonoBehaviour
                 CapsuleCollider cc = hit.transform.GetComponent<CapsuleCollider>();
                 MeshFilter mf = hit.transform.GetComponent<MeshFilter>();
                 rb.constraints = RigidbodyConstraints.None;
-                rb.AddForce(transform.parent.transform.forward * 500);
+                rb.AddForce(transform.parent.transform.forward * 700);
                 EnemyHealth EnemyHealth = hit.collider.GetComponent<EnemyHealth>();
                 EnemyHealth.AddjustCurrentHealth(-1);
                 //Health--;

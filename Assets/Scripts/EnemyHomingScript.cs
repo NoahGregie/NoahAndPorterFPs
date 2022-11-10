@@ -22,7 +22,7 @@ public class EnemyHomingScript : MonoBehaviour
     void FixedUpdate()
     {
 
-        speed = Random.Range(2, 6);
+       // speed = Random.Range(2, 6);
         //makes enemy moves tword charcter
       //  if (pm.crouch == true)
        // {

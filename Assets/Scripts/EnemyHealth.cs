@@ -9,10 +9,27 @@ public class EnemyHealth : MonoBehaviour
     public float maxHealth = 10f;
    
     public bool isDead;
+    Animator animator;
 
+    Rigidbody rb;
+  
+
+    void Start()
+    {
+
+        //get animator attacted to game object
+        animator = gameObject.GetComponent<Animator>();
+        animator.SetBool("PlayRun", true);
+
+    }
     void Update()
     {
+        
+        
         AddjustCurrentHealth(0);
+
+        
+
     }
 
     public void AddjustCurrentHealth(float adj)
@@ -23,6 +40,9 @@ public class EnemyHealth : MonoBehaviour
         {
             currentHealth = 0;
             isDead = true;
+            animator.SetBool("PlayRun", false);
+            animator.SetBool("PlayDeath", true);
+            
         }
 
         if (currentHealth > maxHealth)
@@ -36,9 +56,17 @@ public class EnemyHealth : MonoBehaviour
         }
         if (isDead == true)
         {
+            StartCoroutine(ExecuteAfterTime(1));
+
+
+        }
+        IEnumerator ExecuteAfterTime(float time)
+        {
+            yield return new WaitForSeconds(time);
+           
             Destroy(gameObject);
 
         }
-        
+
     }
 }
