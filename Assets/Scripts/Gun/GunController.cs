@@ -50,7 +50,7 @@ public class GunController : MonoBehaviour
     //you only need to assign this if randmoize recoil is off.
     public Vector2 recoilPattern;
 
-    movemen pm;
+   public PlayerCam pc;
 
     private void Start()
     {
@@ -66,7 +66,7 @@ public class GunController : MonoBehaviour
 
 
 
-    //  DetermineRotation();
+   //  DetermineRotation();
 
 
         if (Input.GetMouseButton(0) && canShoot && currentAmmonInClip > 0)
@@ -137,8 +137,13 @@ public class GunController : MonoBehaviour
 
             Vector2 recoil = new Vector2(xRecoil, yRecoil);
 
-            currentRotation += recoil;
+           // pc = GetComponent<PlayerCam>();
+
+            pc.currentRotation2 += recoil;
+            pc.recoil();
+            //  currentRotation += recoil;
         }
+
     }
     IEnumerator ShootGun()
     {
