@@ -44,18 +44,24 @@ public class PlayerCam : MonoBehaviour
         oreintation.rotation = Quaternion.Euler(0, yRotation, 0);
 
 
-        Vector2 mouseAxis = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+    
 
         
-        currentRotation2 += mouseAxis;
+        
         
     }
     public void recoil()
     {
+        Vector2 mouseAxis = new Vector2(Input.GetAxisRaw("Mouse X"), Input.GetAxisRaw("Mouse Y"));
 
+        currentRotation2 += mouseAxis;
+        currentRotation2.x = Mathf.Clamp(-1, -90, 90);
 
         xRotation += currentRotation2.x;
-        yRotation += currentRotation2.y;
+
+     
+     //   yRotation += currentRotation2.y;
+        Debug.Log("Recoil");
 
     }
 

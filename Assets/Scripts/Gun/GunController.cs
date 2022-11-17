@@ -133,14 +133,17 @@ public class GunController : MonoBehaviour
         if(randomizeRecoil)
         {
             float xRecoil = Random.Range(-randomRecoilConstraints.x, randomRecoilConstraints.x);
-            float yRecoil = Random.Range(-randomRecoilConstraints.y, randomRecoilConstraints.y);
+          float yRecoil = Random.Range(randomRecoilConstraints.y, randomRecoilConstraints.y);
 
+
+            
+            
             Vector2 recoil = new Vector2(xRecoil, yRecoil);
 
            // pc = GetComponent<PlayerCam>();
 
             pc.currentRotation2 += recoil;
-            pc.recoil();
+           pc.recoil();
             //  currentRotation += recoil;
         }
 
@@ -171,7 +174,7 @@ public class GunController : MonoBehaviour
         if(Physics.Raycast(transform.parent.position, transform.parent.forward, out hit, 1 << LayerMask.NameToLayer("Enemy")))
                 {
             try {
-                Debug.Log("Hit A Enemy");
+                
                 Rigidbody rb = hit.transform.GetComponent<Rigidbody>();
                 MeshRenderer mr = hit.transform.GetComponent<MeshRenderer>();
                 CapsuleCollider cc = hit.transform.GetComponent<CapsuleCollider>();

@@ -10,9 +10,13 @@ public class EnemyHealth : MonoBehaviour
    
     public bool isDead;
     Animator animator;
-
+    public int xPos;
+    public int yPos;
+    public int zPos;
     Rigidbody rb;
-  
+    public GameObject Blood;
+
+    
 
     void Start()
     {
@@ -20,6 +24,7 @@ public class EnemyHealth : MonoBehaviour
         //get animator attacted to game object
         animator = gameObject.GetComponent<Animator>();
         animator.SetBool("PlayRun", true);
+        
 
     }
     void Update()
@@ -28,7 +33,10 @@ public class EnemyHealth : MonoBehaviour
         
         AddjustCurrentHealth(0);
 
+
         
+
+
 
     }
 
@@ -42,6 +50,8 @@ public class EnemyHealth : MonoBehaviour
             isDead = true;
             animator.SetBool("PlayRun", false);
             animator.SetBool("PlayDeath", true);
+            
+         //   Instantiate(Blood, new Vector3(xPos, 1, zPos), Quaternion.identity);
             
         }
 
