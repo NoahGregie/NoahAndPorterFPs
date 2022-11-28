@@ -1,29 +1,42 @@
 fileFormatVersion: 2
-guid: f2a1c1d09a471ca4f9ccfb869ada5f85
+guid: 36f42702e8056554c8ba5c8f86f7987f
 ModelImporter:
   serializedVersion: 21300
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      74: 4998488973516931966
+    second: animroot.002|animroot|Noesis Frames|Noesis Layer
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: skv_stormvermin_legs_020
-    second: {fileID: 2100000, guid: 7f5dee1355c517c41a464a0cd3712fc2, type: 2}
+      name: skv_stormvermin_head_020.001
+    second: {fileID: 2100000, guid: 540fde0a8dbf18e48914b43fecc80aad, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: skv_stormvermin_legs_021
-    second: {fileID: 2100000, guid: 7f5dee1355c517c41a464a0cd3712fc2, type: 2}
+      name: skv_stormvermin_head_021.001
+    second: {fileID: 2100000, guid: 540fde0a8dbf18e48914b43fecc80aad, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: skv_stormvermin_legs_020.001
+    second: {fileID: 2100000, guid: 057ff6dac7a40ca489ff23856f64f4af, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: skv_stormvermin_legs_021.001
+    second: {fileID: 2100000, guid: 057ff6dac7a40ca489ff23856f64f4af, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: skv_stormvermin_torso_020.001
-    second: {fileID: 2100000, guid: 7fc121d2ea2ff084ea4a8cfb916ee866, type: 2}
+    second: {fileID: 2100000, guid: 95b9db146a6f8554f90ca5b3414fb793, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: skv_stormvermin_torso_021.001
-    second: {fileID: 2100000, guid: 7fc121d2ea2ff084ea4a8cfb916ee866, type: 2}
+    second: {fileID: 2100000, guid: 95b9db146a6f8554f90ca5b3414fb793, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -35,7 +48,7 @@ ModelImporter:
     resampleCurves: 1
     optimizeGameObjects: 0
     removeConstantScaleCurves: 1
-    motionNodeName: 
+    motionNodeName: animroot.002
     rigImportErrors: 
     rigImportWarnings: 
     animationImportErrors: 
@@ -51,7 +64,36 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: animroot.002|animroot|Noesis Frames|Noesis Layer
+      takeName: animroot.002|animroot|Noesis Frames|Noesis Layer
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 10
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 0
   meshes:
     lODScreenPercentages: []
@@ -109,7 +151,7 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     globalScale: 1
-    rootMotionBoneName: 
+    rootMotionBoneName: animroot.002
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
@@ -117,7 +159,7 @@ ModelImporter:
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
-  avatarSetup: 0
+  avatarSetup: 1
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
   remapMaterialsIfMaterialImportModeIsNone: 0
   additionalBone: 0
