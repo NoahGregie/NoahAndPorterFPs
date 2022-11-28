@@ -14,9 +14,8 @@ public class CollisionDetection : MonoBehaviour
         if(other.tag == "Enemy"&& wp.isAttacking)
         {
 
-            
-            eh.AddjustCurrentHealth(-1);
 
+          //  eh.AddjustCurrentHealth(-1);
         }
 
 
