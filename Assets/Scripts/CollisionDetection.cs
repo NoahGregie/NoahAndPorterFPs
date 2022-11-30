@@ -8,17 +8,35 @@ public class CollisionDetection : MonoBehaviour
     public GameObject HitParticle;
     public EnemyHealth eh;
 
-    private void OnTriggerEnter(Collider other)
+    // private void OnTriggerEnter(Collider other)
+    //  {
+
+    //    if(other.tag == "Enemy"&& wp.isAttacking)
+    //    {
+
+
+    //        eh.AddjustCurrentHealth(-1);
+    //    }
+
+
+    //   }
+
+
+    void OnCollisionEnter(Collision collision)
     {
-        
-        if(other.tag == "Enemy"&& wp.isAttacking)
-        {
 
+          if (collision.gameObject.tag == "Enemy")
+          {
 
-          //  eh.AddjustCurrentHealth(-1);
+             print("SwordHit");
+          
+            eh.AddjustCurrentHealth(-1);
+
+           EnemyHealth EnemyHealth = collision
+
         }
 
+       
 
     }
-
 }

@@ -9,7 +9,7 @@ public class EnemyHealth : MonoBehaviour
     public float maxHealth = 10f;
    
     public bool isDead;
-    Animator animator;
+   public Animator animator;
     public int xPos;
     public int yPos;
     public int zPos;
@@ -50,9 +50,9 @@ public class EnemyHealth : MonoBehaviour
             isDead = true;
             animator.SetBool("PlayRun", false);
             animator.SetBool("PlayDeath", true);
-            
-         //   Instantiate(Blood, new Vector3(xPos, 1, zPos), Quaternion.identity);
-            
+           
+            //   Instantiate(Blood, new Vector3(xPos, 1, zPos), Quaternion.identity);
+
         }
 
         if (currentHealth > maxHealth)
