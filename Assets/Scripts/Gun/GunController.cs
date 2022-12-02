@@ -183,6 +183,8 @@ public class GunController : MonoBehaviour
                 rb.AddForce(transform.parent.transform.forward * 700);
                 EnemyHealth EnemyHealth = hit.collider.GetComponent<EnemyHealth>();
                 EnemyHealth.AddjustCurrentHealth(-1);
+                ratOgreHealth ratOgreHealth = hit.collider.GetComponent<ratOgreHealth>();
+                ratOgreHealth.AddjustCurrentHealth(-1);
                 //Health--;
                 // if (Health == 0)
                 // {

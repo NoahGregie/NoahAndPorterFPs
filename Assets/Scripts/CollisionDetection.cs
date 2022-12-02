@@ -7,7 +7,7 @@ public class CollisionDetection : MonoBehaviour
     public WeaponController wp;
     public GameObject HitParticle;
     public EnemyHealth eh;
-
+    public ratOgreHealth rh;
     // private void OnTriggerEnter(Collider other)
     //  {
 
@@ -22,21 +22,33 @@ public class CollisionDetection : MonoBehaviour
     //   }
 
 
-    void OnCollisionEnter(Collision collision)
-    {
+     void OnCollisionEnter(Collision collision)
+      {
 
-          if (collision.gameObject.tag == "Enemy")
-          {
+           if (collision.gameObject.tag == "Enemy")
+         {
+    
+            print("SwordHit");
+             eh= collision.gameObject.GetComponent<EnemyHealth>();
+             eh.AddjustCurrentHealth(-1);
 
-             print("SwordHit");
-          
-            eh.AddjustCurrentHealth(-1);
 
-          
+
+        }
+         if(collision.gameObject.tag == "BigEnemy")
+        {
+
+            rh = collision.gameObject.GetComponent<ratOgreHealth>();
+            rh.AddjustCurrentHealth(-1);
 
         }
 
-       
 
-    }
+
+      }
+
+   
+
+
+
 }

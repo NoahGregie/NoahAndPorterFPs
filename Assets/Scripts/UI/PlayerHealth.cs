@@ -19,6 +19,8 @@ public class PlayerHealth : MonoBehaviour
     public float duration;
     public float fadeSpeed;
 
+
+    public bool timer = true;
     
 
 
@@ -110,11 +112,26 @@ public class PlayerHealth : MonoBehaviour
         if (collision.collider.gameObject.CompareTag("Enemy"))
         {
             TakeDamage(20);
+            timer = true;
+            StartCoroutine(ExecuteAfterTime(5));
         }
+
+        //turn the timer false, and then sets a timer for healing. If timer becomes false again reset timer. 
+
+
     }
 
+    IEnumerator ExecuteAfterTime(float time)
+    {
+       while( timer == false); 
+        ResoreHealth(10);
+        yield return new WaitForSeconds(time);
 
+        // while (timer == true) ;
 
+        // yield return new WaitForSeconds(time);
+    }
 
+   
 
 }
