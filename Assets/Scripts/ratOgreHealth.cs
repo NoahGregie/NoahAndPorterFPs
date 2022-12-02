@@ -2,37 +2,38 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyHealth : MonoBehaviour
+
+public class ratOgreHealth : MonoBehaviour
 {
 
     public float currentHealth = 10f;
     public float maxHealth = 10f;
-   
+
     public bool isDead;
-   public Animator animator;
+    public Animator animator;
     public int xPos;
     public int yPos;
     public int zPos;
     Rigidbody rb;
     public GameObject Blood;
-    Vector3 blood;
-    
+
+
 
     void Start()
     {
 
         //get animator attacted to game object
         animator = gameObject.GetComponent<Animator>();
-        animator.SetBool("PlayRun", true);
-        
+    
+        animator.SetBool("PlayRunRatOgre", true);
 
     }
     void Update()
     {
-        
-        
+
+
         AddjustCurrentHealth(0);
-        blood = transform.position;
+
 
 
 
@@ -48,11 +49,11 @@ public class EnemyHealth : MonoBehaviour
         {
             currentHealth = 0;
             isDead = true;
-            animator.SetBool("PlayRun", false);
-            animator.SetBool("PlayDeath", true);
+         
 
-          
-          
+            animator.SetBool("PlayRunRatOgre", false);
+            animator.SetBool("PlayDeathRatOgre", true);
+            //   Instantiate(Blood, new Vector3(xPos, 1, zPos), Quaternion.identity);
 
         }
 
@@ -74,11 +75,11 @@ public class EnemyHealth : MonoBehaviour
         IEnumerator ExecuteAfterTime(float time)
         {
             yield return new WaitForSeconds(time);
-            
-            Instantiate(Blood,blood, Quaternion.identity);
+
             Destroy(gameObject);
 
         }
 
     }
 }
+
