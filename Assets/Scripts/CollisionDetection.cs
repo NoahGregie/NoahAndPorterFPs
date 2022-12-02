@@ -32,7 +32,7 @@ public class CollisionDetection : MonoBehaviour
           
             eh.AddjustCurrentHealth(-1);
 
-           EnemyHealth EnemyHealth = collision
+          
 
         }
 
