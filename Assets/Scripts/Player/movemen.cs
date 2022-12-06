@@ -192,8 +192,8 @@ public class movemen : MonoBehaviour
         {
             rb.AddForce(getSlopeMovementDirection() * moveSpeed * 20f, ForceMode.Force);
 
-            if(rb.velocity.y >0)
-                rb.AddForce(Vector3.down * 80f, ForceMode.Force)
+            if (rb.velocity.y > 0)
+                rb.AddForce(Vector3.down * 80f, ForceMode.Force);
 
         }
 
