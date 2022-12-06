@@ -41,6 +41,11 @@ public class movemen : MonoBehaviour
     public LayerMask whatIsGround;
     public bool grounded;
 
+    [Header("Slope Handling")]
+    public float maxSlopeAngle;
+    private RaycastHit slopehit;
+
+
     public Transform orientation;
 
     float horizontalInput;
@@ -178,8 +183,19 @@ public class movemen : MonoBehaviour
 
     private void MovePlayer()
     {
+
         // calculate movement direction
         moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
+
+        //on slope
+        if (onSlope())
+        {
+            rb.AddForce(getSlopeMovementDirection() * moveSpeed * 20f, ForceMode.Force);
+
+            if(rb.velocity.y >0)
+                rb.AddForce(Vector3.down * 80f, ForceMode.Force)
+
+        }
 
         // on ground
         if(grounded)
@@ -188,10 +204,33 @@ public class movemen : MonoBehaviour
         // in air
         else if(!grounded)
             rb.AddForce(moveDirection.normalized * moveSpeed * 10f * airMultiplier, ForceMode.Force);
+
+        //turn gravity off while on slope
+        rb.useGravity = !onSlope();
     }
 
     private void SpeedControl()
     {
+        //limiting spped on slope
+        if (onSlope())
+        {
+            if (rb.velocity.magnitude > moveSpeed)
+                rb.velocity = rb.velocity.normalized * moveSpeed;
+
+        }
+        //limiting sepped on ground or in air
+        else
+        {
+            Vector3 flatvel = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
+
+            //limit veclocity if needed
+            if(flatvel.magnitude > moveSpeed)
+            {
+                Vector3 limitedVel = flatvel.normalized * moveSpeed;
+                rb.velocity = new Vector3(limitedVel.x, rb.velocity.y, limitedVel.z);
+            }
+        }
+
         Vector3 flatVel = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
 
         // limit velocity if needed
@@ -213,4 +252,26 @@ public class movemen : MonoBehaviour
     {
         readyToJump = true;
     }
+
+    private bool onSlope()
+    {
+
+        if(Physics.Raycast(transform.position, Vector3.down, out slopehit, playerHeight * 0.5f + 0.3f))
+        {
+            float angle = Vector3.Angle(Vector3.up, slopehit.normal);
+            return angle < maxSlopeAngle && angle != 0;
+
+
+        }
+        return false;
+
+    }
+
+    private Vector3 getSlopeMovementDirection()
+    {
+
+        return Vector3.ProjectOnPlane(moveDirection, slopehit.normal).normalized;
+
+    }
+
 }

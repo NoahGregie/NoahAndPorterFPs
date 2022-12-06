@@ -315,7 +315,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.01
-  far clip plane: 1000
+  far clip plane: 1e+10
   field of view: 91.7
   orthographic: 0
   orthographic size: 5
@@ -1919,6 +1919,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   grounded: 0
+  maxSlopeAngle: 40
   orientation: {fileID: 167678584}
   state: 0
   crouch: 0
@@ -2818,7 +2819,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 0.1473188, g: 0.16037738, b: 0.14146496, a: 0.92156863}
+  m_Color: {r: 0.055758256, g: 0.066037714, b: 0.04890529, a: 0.92156863}
   m_Intensity: 10
   m_Range: 10
   m_SpotAngle: 30
@@ -3078,7 +3079,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10650, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 10758, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
