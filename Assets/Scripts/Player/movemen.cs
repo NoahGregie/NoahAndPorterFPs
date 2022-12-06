@@ -44,7 +44,7 @@ public class movemen : MonoBehaviour
     [Header("Slope Handling")]
     public float maxSlopeAngle;
     private RaycastHit slopehit;
-
+    private bool exitingBool;
 
     public Transform orientation;
 
@@ -188,7 +188,7 @@ public class movemen : MonoBehaviour
         moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
 
         //on slope
-        if (onSlope())
+        if (onSlope() && !exitingBool)
         {
             rb.AddForce(getSlopeMovementDirection() * moveSpeed * 20f, ForceMode.Force);
 
@@ -212,7 +212,7 @@ public class movemen : MonoBehaviour
     private void SpeedControl()
     {
         //limiting spped on slope
-        if (onSlope())
+        if (onSlope() && !exitingBool)
         {
             if (rb.velocity.magnitude > moveSpeed)
                 rb.velocity = rb.velocity.normalized * moveSpeed;
@@ -243,6 +243,9 @@ public class movemen : MonoBehaviour
 
     private void Jump()
     {
+
+
+        exitingBool = true;
         // reset y velocity
         rb.velocity = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
 
@@ -251,6 +254,7 @@ public class movemen : MonoBehaviour
     private void ResetJump()
     {
         readyToJump = true;
+        exitingBool = false;
     }
 
     private bool onSlope()

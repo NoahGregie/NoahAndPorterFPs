@@ -52,7 +52,7 @@ public class PlayerHealth : MonoBehaviour
             }
         }
 
-       
+        timer = false;
     }
 
     IEnumerator HealHealth()
@@ -112,7 +112,7 @@ public class PlayerHealth : MonoBehaviour
         if (collision.collider.gameObject.CompareTag("Enemy"))
         {
             TakeDamage(20);
-            timer = true;
+           
             StartCoroutine(ExecuteAfterTime(5));
         }
 
@@ -123,8 +123,8 @@ public class PlayerHealth : MonoBehaviour
 
     IEnumerator ExecuteAfterTime(float time)
     {
-       while( timer == false); 
-        ResoreHealth(10);
+       while( timer == true); 
+     //   ResoreHealth(10);
         yield return new WaitForSeconds(time);
 
         // while (timer == true) ;

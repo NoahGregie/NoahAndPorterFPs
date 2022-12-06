@@ -16,8 +16,8 @@ public class EnemyHealth : MonoBehaviour
     Rigidbody rb;
     public GameObject Blood;
     Vector3 blood;
-    
-
+    PlayerHealth ph;
+    public GameObject player;
     void Start()
     {
 
@@ -76,6 +76,8 @@ public class EnemyHealth : MonoBehaviour
             yield return new WaitForSeconds(time);
             
             Instantiate(Blood,blood, Quaternion.identity);
+          ph=  player.GetComponent<PlayerHealth>();
+            ph.ResoreHealth(1);
             Destroy(gameObject);
 
         }

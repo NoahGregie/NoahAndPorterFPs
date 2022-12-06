@@ -10,7 +10,7 @@ public class EnemySpawner : MonoBehaviour
     public int enemyCount;
     public GameObject finalBoss;
     public int secondEnemyCount;
-
+    public int MaxEnemyCount;
 
      void Start()
     {
@@ -19,7 +19,7 @@ public class EnemySpawner : MonoBehaviour
 
     IEnumerator EnemyDrop()
     {
-        while (enemyCount <10)
+        while (enemyCount <MaxEnemyCount)
         {
             xPos = Random.Range(-22, 10);
             zPos = Random.Range(7, 4);
