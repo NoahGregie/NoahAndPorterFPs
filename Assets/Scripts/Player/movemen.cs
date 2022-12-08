@@ -96,12 +96,17 @@ public class movemen : MonoBehaviour
             rb.drag = groundDrag;
         else
             rb.drag = 0;
+        //no clip
+       
+
+
     }
 
     private void FixedUpdate()
     {
         MovePlayer();
     }
+   
 
     private void MyInput()
     {

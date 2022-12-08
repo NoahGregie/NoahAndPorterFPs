@@ -50,20 +50,20 @@ public class AdvancdedEnemyAI : MonoBehaviour
         if (playerInAttackRange && playerInSightRange) AttackPlayer();
     }
 
-   // private void Patroling()
-   // {
-     //   if (!walkPointSet) SearchWalkPoint();
-     //   if(walkPointSet)
-     //   {
-     //       agent.SetDestination(walkPoint);
+   private void Patroling()
+  {
+        if (!walkPointSet) SearchWalkPoint();
+       if(walkPointSet)
+       {
+           agent.SetDestination(walkPoint);
 
-       //     Vector3 distanceToWalkPoint = transform.position - walkPoint;
-            //walkpointreached
-        //    if (distanceToWalkPoint.magnitude < 1f)
-         //       walkPointSet = false;
+            Vector3 distanceToWalkPoint = transform.position - walkPoint;
+        //    walkpointreached
+            if (distanceToWalkPoint.magnitude < 1f)
+                walkPointSet = false;
 
-     //   }
-  //  }
+       }
+   }
     private void SearchWalkPoint()
     {
         //calculate random point
@@ -84,7 +84,7 @@ public class AdvancdedEnemyAI : MonoBehaviour
 
     private void AttackPlayer()
     {
-
+        //make sure enemy doesnt move
         agent.SetDestination(transform.position);
 
         transform.LookAt(player);
@@ -118,5 +118,6 @@ public class AdvancdedEnemyAI : MonoBehaviour
         alreadyAttacked = false;
 
     }
+
 
 }
