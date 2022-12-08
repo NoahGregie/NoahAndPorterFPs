@@ -18,23 +18,26 @@ public class EnemyHealth : MonoBehaviour
     Vector3 blood;
     PlayerHealth ph;
     public GameObject player;
-    public EnemyHomingScript variableName;
+
+
     void Start()
     {
 
         //get animator attacted to game object
         animator = gameObject.GetComponent<Animator>();
         animator.SetBool("PlayRun", true);
-        GetComponent().enabled = false;
+        
 
+       
 
     }
     void Update()
     {
-        
-        
+
+      
         AddjustCurrentHealth(0);
         blood = transform.position;
+       
 
 
 
@@ -85,4 +88,9 @@ public class EnemyHealth : MonoBehaviour
         }
 
     }
+
+
+   
+
+
 }

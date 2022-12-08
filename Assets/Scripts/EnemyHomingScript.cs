@@ -11,8 +11,8 @@ public class EnemyHomingScript : MonoBehaviour
     movemen pm;
     public LayerMask whatIsGround, whatIsPlayer;
     public Transform player;
-    public float sightRange, attackRange;
-    public bool playerInSightRange, playerInAttackRange;
+   // public float sightRange, attackRange;
+   // public bool playerInSightRange, playerInAttackRange;
     public GameObject self;
 
     // Start is called before the first frame update
@@ -29,8 +29,8 @@ public class EnemyHomingScript : MonoBehaviour
 
     private void Update()
     {
-        playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
-        Activation();
+       
+      
     }
 
 
@@ -55,17 +55,6 @@ public class EnemyHomingScript : MonoBehaviour
     }
 
 
-    private void Activation()
-    {
-
-        if (playerInSightRange)
-        {
-            self.SetActive(true);
-        }
-
-
-
-
-    }
+   
 }
 
