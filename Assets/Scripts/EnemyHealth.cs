@@ -23,9 +23,7 @@ public class EnemyHealth : MonoBehaviour
     void Start()
     {
 
-        //get animator attacted to game object
-        animator = gameObject.GetComponent<Animator>();
-        animator.SetBool("PlayRun", true);
+      
         
 
        

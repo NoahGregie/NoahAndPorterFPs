@@ -1056,6 +1056,51 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1000013355911406, guid: d32aa916f50cac94db11e6f19821a58f, type: 3}
   m_PrefabInstance: {fileID: 952409691}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &424886120
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 424886121}
+  - component: {fileID: 424886122}
+  m_Layer: 0
+  m_Name: LOS
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &424886121
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 424886120}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.00012, y: 0.0113, z: 0.02427}
+  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1457484056}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &424886122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 424886120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20fd6612cd3c7a44698dbd17f3efac10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distance: 100
 --- !u!1 &433168627 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8d3eb984f35f5ba4d923b7b46a9f5e51, type: 3}
@@ -1082,16 +1127,6 @@ MonoBehaviour:
   zPos: 0
   Blood: {fileID: 0}
   player: {fileID: 0}
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 0
-  whatIsPlayer:
-    serializedVersion: 2
-    m_Bits: 0
-  sightRange: 0
-  attackRange: 0
-  playerInSightRange: 0
-  playerInAttackRange: 0
 --- !u!114 &433168629
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1104,6 +1139,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e345f771ca17aa645b389a2ac05627e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 0}
   target: {fileID: 1391966017}
   speed: 2
   whatIsGround:
@@ -1114,6 +1150,7 @@ MonoBehaviour:
     m_Bits: 0
   player: {fileID: 0}
   self: {fileID: 433168627}
+  cansee: 0
 --- !u!136 &433168630
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2317,7 +2354,7 @@ MonoBehaviour:
   jumpCooldown: 0.25
   airMultiplier: 0.4
   crouchSpeed: 3.5
-  crouchYScale: 0.5
+  crouchYScale: 0.25
   jumpKey: 32
   sprintKey: 304
   crouchKey: 99
@@ -2544,6 +2581,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e345f771ca17aa645b389a2ac05627e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 0}
   target: {fileID: 1391966017}
   speed: 1
   whatIsGround:
@@ -2554,6 +2592,7 @@ MonoBehaviour:
     m_Bits: 1024
   player: {fileID: 1861400066}
   self: {fileID: 1457484055}
+  cansee: 0
 --- !u!114 &1457484059
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2569,22 +2608,12 @@ MonoBehaviour:
   currentHealth: 1
   maxHealth: 1
   isDead: 0
-  animator: {fileID: 0}
+  animator: {fileID: 1457484064}
   xPos: 0
   yPos: 0
   zPos: 0
   Blood: {fileID: 1000013355911406, guid: d32aa916f50cac94db11e6f19821a58f, type: 3}
   player: {fileID: 1391966011}
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 0
-  whatIsPlayer:
-    serializedVersion: 2
-    m_Bits: 0
-  sightRange: 0
-  attackRange: 0
-  playerInSightRange: 0
-  playerInAttackRange: 0
 --- !u!136 &1457484060
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2615,6 +2644,11 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 112
   m_CollisionDetection: 1
+--- !u!95 &1457484064 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: c46d37a3b998a2e4c8695d0c0ea8159a, type: 3}
+  m_PrefabInstance: {fileID: 1478390221}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1473131407
 PrefabInstance:
   m_ObjectHideFlags: 0
