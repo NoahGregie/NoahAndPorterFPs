@@ -18,6 +18,8 @@ public class EnemyHealth : MonoBehaviour
     Vector3 blood;
     PlayerHealth ph;
     public GameObject player;
+
+
     void Start()
     {
 
@@ -26,13 +28,16 @@ public class EnemyHealth : MonoBehaviour
         animator.SetBool("PlayRun", true);
         
 
+       
+
     }
     void Update()
     {
-        
-        
+
+      
         AddjustCurrentHealth(0);
         blood = transform.position;
+       
 
 
 
@@ -83,4 +88,9 @@ public class EnemyHealth : MonoBehaviour
         }
 
     }
+
+
+   
+
+
 }
