@@ -14,6 +14,8 @@ public class scrpit : MonoBehaviour
         raycast();
     }
 
+
+    //ray cast works but is too tall
     public void raycast()
     {
         Ray ray = new Ray(transform.position, transform.forward);
