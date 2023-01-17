@@ -40,7 +40,7 @@ public class conedetectin : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            Debug.Log("An object enter.");
+           // Debug.Log("An object enter.");
             //Freeze all positions
            // rb.constraints = RigidbodyConstraints.FreezePosition;
             active = true;
@@ -55,7 +55,7 @@ public class conedetectin : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            Debug.Log("An object left.");
+           // Debug.Log("An object left.");
 
             active = false;
         }

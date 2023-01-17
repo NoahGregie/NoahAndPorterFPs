@@ -7,11 +7,12 @@ public class EnemySpawner : MonoBehaviour
     public GameObject theEnemy;
     public int xPos;
     public int zPos;
+    public int yPos;
     public int enemyCount;
     public GameObject finalBoss;
     public int secondEnemyCount;
     public int MaxEnemyCount;
-
+    
      void Start()
     {
         StartCoroutine(EnemyDrop());
@@ -19,11 +20,11 @@ public class EnemySpawner : MonoBehaviour
 
     IEnumerator EnemyDrop()
     {
-        while (enemyCount <50 )
+        while (enemyCount <MaxEnemyCount )
         {
-            xPos = Random.Range(-22, 10);
-            zPos = Random.Range(7, 4);
-            Instantiate(theEnemy, new Vector3(xPos, 0, zPos), Quaternion.identity);
+           // xPos = Random.Range();
+          //  zPos = Random.Range();
+            Instantiate(theEnemy, new Vector3(xPos, yPos, zPos), Quaternion.identity);
             yield return new WaitForSeconds(0.1f);
             enemyCount += 1;
         }

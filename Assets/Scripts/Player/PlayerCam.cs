@@ -61,7 +61,7 @@ public class PlayerCam : MonoBehaviour
 
      
      //   yRotation += currentRotation2.y;
-        Debug.Log("Recoil");
+     //   Debug.Log("Recoil");
 
     }
 

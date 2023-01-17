@@ -51,6 +51,8 @@ public class GunController : MonoBehaviour
     public Vector2 recoilPattern;
 
    public PlayerCam pc;
+    public LayerMask worldLayer;
+    int layerMask = 1 << 7;
 
     private void Start()
     {
@@ -171,10 +173,12 @@ public class GunController : MonoBehaviour
     void RayCastForEnemy()
     {
         RaycastHit hit;
-        if(Physics.Raycast(transform.parent.position, transform.parent.forward, out hit, 1 << LayerMask.NameToLayer("Enemy")))
+      //                       starting postition         direction of ray        max distance    
+        if (Physics.Raycast(transform.parent.position, transform.parent.forward, out hit, Mathf.Infinity, worldLayer))
                 {
             try {
-                
+              
+                Debug.Log("hit");
                 Rigidbody rb = hit.transform.GetComponent<Rigidbody>();
                 MeshRenderer mr = hit.transform.GetComponent<MeshRenderer>();
                 CapsuleCollider cc = hit.transform.GetComponent<CapsuleCollider>();

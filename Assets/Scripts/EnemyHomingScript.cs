@@ -29,7 +29,7 @@ public class EnemyHomingScript : MonoBehaviour
     public LayerMask whatIsGround;
     public bool grounded;
     public float groundDrag;
-
+    public int dumb;
 
     private float moveSpeed;
     Vector3 moveDirection;
@@ -58,10 +58,11 @@ public class EnemyHomingScript : MonoBehaviour
 
         grounded = Physics.Raycast(transform.position, Vector3.down, enemyHeight * 0.5f + 0.3f, whatIsGround);
         if (grounded)
-            Debug.Log("isgrounded");
+            //Debug.Log("isgrounded");
+            dumb = 1;
         else
-            Debug.Log("notntogrounded");
-        rig.AddForce(0, force, 0, ForceMode.Force);
+            //  Debug.Log("notntogrounded");
+            rig.AddForce(0, force, 0, ForceMode.Force);
 
 
 
