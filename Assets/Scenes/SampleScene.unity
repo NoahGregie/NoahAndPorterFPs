@@ -325,18 +325,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e345f771ca17aa645b389a2ac05627e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  orientation: {fileID: 0}
   animator: {fileID: 0}
   target: {fileID: 0}
   speed: 2
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 0
-  whatIsPlayer:
-    serializedVersion: 2
-    m_Bits: 0
   player: {fileID: 0}
   self: {fileID: 596411042}
   cansee: 0
+  cd: {fileID: 0}
+  enemyHeight: 0
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 0
+  grounded: 0
+  groundDrag: 0
+  force: 0
 --- !u!114 &596411046
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -934,7 +937,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &1447436338
 MeshCollider:
   m_ObjectHideFlags: 0
