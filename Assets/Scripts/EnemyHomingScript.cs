@@ -31,7 +31,7 @@ public class EnemyHomingScript : MonoBehaviour
     public float groundDrag;
     public int dumb;
 
-    private float moveSpeed;
+    public float moveSpeed;
     Vector3 moveDirection;
 
     public float force;
@@ -77,8 +77,8 @@ public class EnemyHomingScript : MonoBehaviour
             animator.SetBool("PlayRun", true);
             transform.LookAt(target);
             //Debug.Log("movovmoemvoe");
-            rig.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
-
+           rig.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
+         
         }
 
 
