@@ -285,7 +285,7 @@ MonoBehaviour:
   zPos: 264
   yPos: 21
   enemyCount: 0
-  finalBoss: {fileID: 0}
+  finalBoss: {fileID: 433168627}
   secondEnemyCount: 0
   MaxEnemyCount: 30
 --- !u!64 &71261450
@@ -4776,27 +4776,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8d3eb984f35f5ba4d923b7b46a9f5e51, type: 3}
   m_PrefabInstance: {fileID: 1473131407}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &433168628
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 433168627}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6be21eb004f87bb4b8d97ae4aa1baf64, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentHealth: 10
-  maxHealth: 10
-  isDead: 0
-  animator: {fileID: 433168635}
-  xPos: 0
-  yPos: 0
-  zPos: 0
-  Blood: {fileID: 414896040}
-  player: {fileID: 1391966011}
 --- !u!136 &433168630
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4832,11 +4811,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 8d3eb984f35f5ba4d923b7b46a9f5e51, type: 3}
   m_PrefabInstance: {fileID: 1473131407}
   m_PrefabAsset: {fileID: 0}
---- !u!95 &433168635 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 8d3eb984f35f5ba4d923b7b46a9f5e51, type: 3}
-  m_PrefabInstance: {fileID: 1473131407}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &433168636
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4866,6 +4840,26 @@ MonoBehaviour:
   dumb: 0
   moveSpeed: 20
   force: -100
+--- !u!114 &433168637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 433168627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80d2c8b3077d0524fac6a18a1d468dd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentHealth: 10
+  maxHealth: 10
+  isDead: 0
+  animator: {fileID: 0}
+  xPos: 0
+  yPos: 0
+  zPos: 0
+  Blood: {fileID: 0}
 --- !u!1001 &446325285
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7882,7 +7876,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 848198184}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
   m_Name: 
@@ -14618,7 +14612,7 @@ MonoBehaviour:
   zPos: 0
   yPos: 0
   enemyCount: 0
-  finalBoss: {fileID: 0}
+  finalBoss: {fileID: 433168627}
   secondEnemyCount: 0
   MaxEnemyCount: 0
 --- !u!1 &1457484055 stripped
@@ -14753,7 +14747,7 @@ MonoBehaviour:
   zPos: 242
   yPos: 10
   enemyCount: 0
-  finalBoss: {fileID: 0}
+  finalBoss: {fileID: 433168627}
   secondEnemyCount: 0
   MaxEnemyCount: 30
 --- !u!64 &1471991580
@@ -14868,7 +14862,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8d3eb984f35f5ba4d923b7b46a9f5e51, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -24.89
+      value: -403.7
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8d3eb984f35f5ba4d923b7b46a9f5e51, type: 3}
       propertyPath: m_LocalRotation.w
@@ -17222,7 +17216,7 @@ MonoBehaviour:
   zPos: 132
   yPos: 9
   enemyCount: 0
-  finalBoss: {fileID: 0}
+  finalBoss: {fileID: 433168627}
   secondEnemyCount: 0
   MaxEnemyCount: 20
 --- !u!64 &1731225275
@@ -17958,7 +17952,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1861400065}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -19867,6 +19861,125 @@ Transform:
   m_Father: {fileID: 708125215}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2120703221
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2120703226}
+  - component: {fileID: 2120703225}
+  - component: {fileID: 2120703224}
+  - component: {fileID: 2120703223}
+  - component: {fileID: 2120703222}
+  m_Layer: 0
+  m_Name: RatSpawner (7)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2120703222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2120703221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5747d9f8e9901054e90a601860bfb87a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  theEnemy: {fileID: 1457484055}
+  xPos: 199
+  zPos: -18
+  yPos: 163
+  enemyCount: 0
+  finalBoss: {fileID: 433168627}
+  secondEnemyCount: 0
+  MaxEnemyCount: 50
+--- !u!64 &2120703223
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2120703221}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &2120703224
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2120703221}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &2120703225
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2120703221}
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &2120703226
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2120703221}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 199.51666, y: -18.44, z: 163.02588}
+  m_LocalScale: {x: 16.856, y: 1.7574, z: 4.5108}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 23
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2136581674
 GameObject:
   m_ObjectHideFlags: 0
@@ -19904,7 +20017,7 @@ MonoBehaviour:
   zPos: 242
   yPos: 10
   enemyCount: 0
-  finalBoss: {fileID: 0}
+  finalBoss: {fileID: 433168627}
   secondEnemyCount: 0
   MaxEnemyCount: 30
 --- !u!64 &2136581676
@@ -20143,11 +20256,11 @@ PrefabInstance:
       objectReference: {fileID: 96160075}
     - target: {fileID: 1247126893094575974, guid: cae2387a9f7829845aaadc711c684271, type: 3}
       propertyPath: clipSize
-      value: 30
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 1247126893094575974, guid: cae2387a9f7829845aaadc711c684271, type: 3}
       propertyPath: fireRate
-      value: 0.05
+      value: 0.0001
       objectReference: {fileID: 0}
     - target: {fileID: 1247126893094575974, guid: cae2387a9f7829845aaadc711c684271, type: 3}
       propertyPath: oreintation
@@ -20159,7 +20272,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1247126893094575974, guid: cae2387a9f7829845aaadc711c684271, type: 3}
       propertyPath: reservedAmmoCapticity
-      value: 100
+      value: 1000000000
       objectReference: {fileID: 0}
     - target: {fileID: 1875045426999936475, guid: cae2387a9f7829845aaadc711c684271, type: 3}
       propertyPath: m_RootOrder

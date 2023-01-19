@@ -28,10 +28,10 @@ public class EnemySpawner : MonoBehaviour
             yield return new WaitForSeconds(0.1f);
             enemyCount += 1;
         }
-        if (enemyCount == 300)
+        if (enemyCount == MaxEnemyCount)
         {
 
-            Instantiate(finalBoss, new Vector3(-22, 1, 170), Quaternion.identity);
+            Instantiate(finalBoss, new Vector3(xPos, yPos, zPos), Quaternion.identity);
 
         }
     }

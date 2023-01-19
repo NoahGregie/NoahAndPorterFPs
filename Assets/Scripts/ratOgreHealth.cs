@@ -25,7 +25,7 @@ public class ratOgreHealth : MonoBehaviour
         //get animator attacted to game object
         animator = gameObject.GetComponent<Animator>();
     
-        animator.SetBool("PlayRunRatOgre", true);
+      
 
     }
     void Update()
@@ -51,8 +51,8 @@ public class ratOgreHealth : MonoBehaviour
             isDead = true;
          
 
-            animator.SetBool("PlayRunRatOgre", false);
-            animator.SetBool("PlayDeathRatOgre", true);
+            animator.SetBool("PlaySpecialRun", false);
+            animator.SetBool("playSepcialDeath", true);
             //   Instantiate(Blood, new Vector3(xPos, 1, zPos), Quaternion.identity);
 
         }
