@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyHomingScript : MonoBehaviour
+public class SpecialRathomingScript : MonoBehaviour
 {
 
     public Transform orientation;
@@ -16,8 +16,8 @@ public class EnemyHomingScript : MonoBehaviour
     movemen pm;
 
     public Transform player;
-   // public float sightRange, attackRange;
-   // public bool playerInSightRange, playerInAttackRange;
+    // public float sightRange, attackRange;
+    // public bool playerInSightRange, playerInAttackRange;
     public GameObject self;
     public bool cansee = false;
     // Start is called before the first frame update
@@ -43,17 +43,17 @@ public class EnemyHomingScript : MonoBehaviour
         player = GameObject.Find("Player").transform;
         animator = gameObject.GetComponent<Animator>();
         // animator.SetBool("PlayRun", false);
-    
+
         rig.isKinematic = true;
     }
 
     // Update is called onc
     // e per frame
 
-   
 
-    
-  public  void Update()
+
+
+    public void Update()
     {
 
         grounded = Physics.Raycast(transform.position, Vector3.down, enemyHeight * 0.5f + 0.3f, whatIsGround);
@@ -68,18 +68,18 @@ public class EnemyHomingScript : MonoBehaviour
 
         if (cd.active == true)
         {
-           
+
 
             rig.isKinematic = false;
             Vector3 pos = Vector3.MoveTowards(transform.position, target.position, speed * Time.fixedDeltaTime);
             moveDirection = orientation.forward;
-          //make this pos.y into the ground.
-            animator.SetBool("PlayRun", true);
-           
+            //make this pos.y into the ground.
+ 
+            animator.SetBool("PlaySpecialRun", true);
             transform.LookAt(target);
             //Debug.Log("movovmoemvoe");
-           rig.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
-         
+            rig.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
+
         }
 
 
@@ -88,11 +88,11 @@ public class EnemyHomingScript : MonoBehaviour
 
             rig.isKinematic = true;
             Vector3 pos = Vector3.MoveTowards(transform.position, target.position, speed * Time.fixedDeltaTime);
-         //   pos.y = 1f;
-           // animator.SetBool("PlayRun", false);
+            //   pos.y = 1f;
+            // animator.SetBool("PlayRun", false);
             transform.LookAt(target);
-           // Debug.Log("stop");
-            
+            // Debug.Log("stop");
+
 
         }
 
