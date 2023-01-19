@@ -340,6 +340,7 @@ MonoBehaviour:
   grounded: 0
   groundDrag: 0
   dumb: 0
+  moveSpeed: 0
   force: 0
 --- !u!114 &596411046
 MonoBehaviour:
