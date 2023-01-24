@@ -280,7 +280,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5747d9f8e9901054e90a601860bfb87a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  theEnemy: {fileID: 1457484055}
+  theEnemy: {fileID: 0}
   xPos: 202
   zPos: 264
   yPos: 21
@@ -13513,7 +13513,7 @@ GameObject:
   m_Layer: 10
   m_Name: Player
   m_TagString: Player
-  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -14612,7 +14612,7 @@ MonoBehaviour:
   zPos: 0
   yPos: 0
   enemyCount: 0
-  finalBoss: {fileID: 433168627}
+  finalBoss: {fileID: 0}
   secondEnemyCount: 0
   MaxEnemyCount: 0
 --- !u!1 &1457484055 stripped
@@ -14747,7 +14747,7 @@ MonoBehaviour:
   zPos: 242
   yPos: 10
   enemyCount: 0
-  finalBoss: {fileID: 433168627}
+  finalBoss: {fileID: 0}
   secondEnemyCount: 0
   MaxEnemyCount: 30
 --- !u!64 &1471991580
@@ -14862,7 +14862,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8d3eb984f35f5ba4d923b7b46a9f5e51, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -403.7
+      value: -420.34
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8d3eb984f35f5ba4d923b7b46a9f5e51, type: 3}
       propertyPath: m_LocalRotation.w
@@ -16498,7 +16498,7 @@ MonoBehaviour:
   zPos: 85
   yPos: 256
   enemyCount: 0
-  finalBoss: {fileID: 433168627}
+  finalBoss: {fileID: 0}
   secondEnemyCount: 0
   MaxEnemyCount: 50
 --- !u!64 &1671056636
@@ -17216,7 +17216,7 @@ MonoBehaviour:
   zPos: 132
   yPos: 9
   enemyCount: 0
-  finalBoss: {fileID: 433168627}
+  finalBoss: {fileID: 0}
   secondEnemyCount: 0
   MaxEnemyCount: 20
 --- !u!64 &1731225275
@@ -19898,7 +19898,7 @@ MonoBehaviour:
   zPos: -18
   yPos: 163
   enemyCount: 0
-  finalBoss: {fileID: 433168627}
+  finalBoss: {fileID: 0}
   secondEnemyCount: 0
   MaxEnemyCount: 50
 --- !u!64 &2120703223
@@ -20017,7 +20017,7 @@ MonoBehaviour:
   zPos: 242
   yPos: 10
   enemyCount: 0
-  finalBoss: {fileID: 433168627}
+  finalBoss: {fileID: 0}
   secondEnemyCount: 0
   MaxEnemyCount: 30
 --- !u!64 &2136581676
