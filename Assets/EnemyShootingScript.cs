@@ -75,7 +75,7 @@ public class EnemyShootingScript : MonoBehaviour
 
 
             ChasePlayer();
-            Debug.Log("j");
+           // Debug.Log("j");
         }
 
 
@@ -127,7 +127,7 @@ public class EnemyShootingScript : MonoBehaviour
 
             //attack code
             Rigidbody rb = Instantiate(projectile, transform.position, Quaternion.identity).GetComponent<Rigidbody>();
-            rb.AddForce(transform.forward * 10f, ForceMode.Impulse);
+            rb.AddForce(transform.forward * 100f, ForceMode.Impulse);
             rb.AddForce(transform.up * 8f, ForceMode.Impulse);
 
             alreadyAttacked = true;

@@ -178,7 +178,7 @@ public class GunController : MonoBehaviour
                 {
             try {
               
-                Debug.Log("hit");
+               // Debug.Log("hit");
                 Rigidbody rb = hit.transform.GetComponent<Rigidbody>();
                 MeshRenderer mr = hit.transform.GetComponent<MeshRenderer>();
                 CapsuleCollider cc = hit.transform.GetComponent<CapsuleCollider>();

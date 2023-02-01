@@ -117,6 +117,12 @@ public class PlayerHealth : MonoBehaviour
         }
 
         //turn the timer false, and then sets a timer for healing. If timer becomes false again reset timer. 
+        if (collision.collider.gameObject.CompareTag("Projectile"))
+        {
+            TakeDamage(10);
+            StartCoroutine(ExecuteAfterTime(5));
+        }
+
 
 
     }
