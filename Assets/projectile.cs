@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class projectile : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        PlayerHealth ph;
-        public GameObject player;
-    }
+
+
+
+}
+
+ 
 
 
 
