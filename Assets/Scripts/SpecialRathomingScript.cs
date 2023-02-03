@@ -45,6 +45,8 @@ public class SpecialRathomingScript : MonoBehaviour
         // animator.SetBool("PlayRun", false);
 
         rig.isKinematic = true;
+
+        StartCoroutine(attackCooldown());
     }
 
     // Update is called onc
@@ -77,8 +79,9 @@ public class SpecialRathomingScript : MonoBehaviour
  
             animator.SetBool("PlaySpecialRun", true);
             transform.LookAt(target);
-            //Debug.Log("movovmoemvoe");
+            Debug.Log("movovmoemvoe");
             rig.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
+
 
         }
 
@@ -91,12 +94,26 @@ public class SpecialRathomingScript : MonoBehaviour
             //   pos.y = 1f;
             // animator.SetBool("PlayRun", false);
             transform.LookAt(target);
-            // Debug.Log("stop");
-
+             Debug.Log("stop");
+            
 
         }
-
-
+        // ATTACK SCRIPT
+        float distance = Vector3.Distance(self.transform.position, player.transform.position);
+        Debug.Log(distance);
+        if(distance <= 5){
+            animator.SetBool("PlayAttack", true);
+            moveSpeed = 0;
+           
+            //Cooldown
+            IEnumerator attackCooldown(){
+                yield return new waitforseconds(3f);
+                //my code here after 3 seconds
+            }
+        }
+        if(distance > 5){
+            animator.SetBool("PlayAttack", false);
+        }
 
     }
 
