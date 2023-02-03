@@ -35,7 +35,7 @@ public class EnemyHomingScript : MonoBehaviour
     Vector3 moveDirection;
 
     public float force;
-
+    public float force2;
     void Start()
     {
         rig = GetComponent<Rigidbody>();

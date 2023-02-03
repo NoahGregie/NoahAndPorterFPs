@@ -44,8 +44,8 @@ public class ratOgreHealth : MonoBehaviour
     public void AddjustCurrentHealth(float adj)
     {
         currentHealth += adj;
-
-        if (currentHealth <= 0)
+       
+        if (currentHealth <= 0) 
         {
             currentHealth = 0;
             isDead = true;
