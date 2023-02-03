@@ -22,32 +22,34 @@ public class CollisionDetection : MonoBehaviour
     //   }
 
 
-     void OnCollisionEnter(Collision collision)
-      {
-
-           if (collision.gameObject.tag == "Enemy")
-         {
     
+    private void OnTriggerEnter(Collider other)
+    {
+
+        if (other.gameObject.tag == "Enemy")
+        {
+
             print("SwordHit");
-             eh= collision.gameObject.GetComponent<EnemyHealth>();
-             eh.AddjustCurrentHealth(-1);
+            eh = other.gameObject.GetComponent<EnemyHealth>();
+            eh.AddjustCurrentHealth(-1);
 
 
 
         }
-         if(collision.gameObject.tag == "BigEnemy")
+        if (other.gameObject.tag == "BigEnemy")
         {
 
-            rh = collision.gameObject.GetComponent<ratOgreHealth>();
+            rh = other.gameObject.GetComponent<ratOgreHealth>();
             rh.AddjustCurrentHealth(-1);
 
         }
 
 
 
-      }
+    }
 
-   
+
+
 
 
 
