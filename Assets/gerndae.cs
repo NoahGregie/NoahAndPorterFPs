@@ -12,7 +12,7 @@ public class gerndae : MonoBehaviour
     public float radius = 5f;
     public GameObject explosioneffect;
     float countdown;
-
+    public float force = 700f;
     bool hasExploded = false;
     // Start is called before the first frame update
     void Start()
@@ -39,15 +39,30 @@ public class gerndae : MonoBehaviour
     void Explosion()
     {
 
+        //get all nearby objects and then add force to objects
+
         Instantiate(explosioneffect, transform.position, transform.rotation);
 
        Collider[] colliders = Physics.OverlapSphere(transform.position, radius);
 
-      //foreach (Collider nearbyObject)
+      foreach (Collider nearbyObject in colliders)
+        {
+
+            Rigidbody rb = nearbyObject.GetComponent<Rigidbody>();
+            EnemyHealth eh = nearbyObject.GetComponent<EnemyHealth>();
+            if(rb!= null &&eh!= null)
+            {
+                rb.AddExplosionForce(force, transform.position, radius);
+                eh.AddjustCurrentHealth(-1);
+
+            }
+
+
+        }
 
 
 
         Destroy(gameObject);
-
+        
     }
 }

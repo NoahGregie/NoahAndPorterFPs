@@ -112,6 +112,7 @@ public class PlayerHealth : MonoBehaviour
         if (collision.collider.gameObject.CompareTag("Enemy"))
         {
             TakeDamage(20);
+
            
             StartCoroutine(ExecuteAfterTime(5));
         }
