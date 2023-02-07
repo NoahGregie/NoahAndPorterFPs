@@ -444,6 +444,7 @@ MonoBehaviour:
   dumb: 0
   moveSpeed: 0
   force: -100
+  force2: 0
 --- !u!136 &74264479
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -5036,6 +5037,7 @@ MonoBehaviour:
   dumb: 0
   moveSpeed: 20
   force: -100
+  ph: {fileID: 1391966021}
 --- !u!114 &433168637
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5745,6 +5747,7 @@ MonoBehaviour:
   dumb: 0
   moveSpeed: 0
   force: -100
+  force2: 0
 --- !u!136 &453159412
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -5819,6 +5822,7 @@ MonoBehaviour:
   dumb: 0
   moveSpeed: 0
   force: -100
+  force2: 0
 --- !u!114 &509036211
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5935,6 +5939,7 @@ MonoBehaviour:
   dumb: 0
   moveSpeed: 0
   force: -100
+  force2: 0
 --- !u!136 &557990684
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -7416,6 +7421,7 @@ MonoBehaviour:
   dumb: 0
   moveSpeed: 0
   force: -100
+  force2: 0
 --- !u!136 &708125219
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -7542,6 +7548,7 @@ MonoBehaviour:
   dumb: 0
   moveSpeed: 0
   force: -100
+  force2: 0
 --- !u!136 &749120393
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -11937,6 +11944,7 @@ MonoBehaviour:
   dumb: 0
   moveSpeed: 0
   force: -100
+  force2: 0
 --- !u!114 &1218052378
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12697,6 +12705,7 @@ MonoBehaviour:
   dumb: 0
   moveSpeed: 0
   force: -100
+  force2: 0
 --- !u!136 &1283762412
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -12792,6 +12801,7 @@ MonoBehaviour:
   dumb: 0
   moveSpeed: 0
   force: -100
+  force2: 0
 --- !u!136 &1310575107
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -13531,6 +13541,7 @@ MonoBehaviour:
   dumb: 0
   moveSpeed: 0
   force: -100
+  force2: 0
 --- !u!136 &1348664895
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -14260,6 +14271,7 @@ MonoBehaviour:
   dumb: 0
   moveSpeed: 0
   force: -100
+  force2: 0
 --- !u!136 &1386756954
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -15460,6 +15472,7 @@ MonoBehaviour:
   dumb: 0
   moveSpeed: 20
   force: -100
+  force2: 0
 --- !u!114 &1457484059
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17731,6 +17744,7 @@ MonoBehaviour:
   dumb: 0
   moveSpeed: 0
   force: -100
+  force2: 0
 --- !u!136 &1661313379
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -17945,6 +17959,7 @@ MonoBehaviour:
   dumb: 0
   moveSpeed: 0
   force: -100
+  force2: 0
 --- !u!136 &1678287634
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -19459,6 +19474,7 @@ MonoBehaviour:
   dumb: 0
   moveSpeed: 0
   force: -100
+  force2: 0
 --- !u!136 &1873919582
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -20801,6 +20817,7 @@ MonoBehaviour:
   dumb: 0
   moveSpeed: 0
   force: -100
+  force2: 0
 --- !u!136 &2017183426
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -21253,6 +21270,7 @@ MonoBehaviour:
   dumb: 0
   moveSpeed: 0
   force: -100
+  force2: 0
 --- !u!136 &2109763234
 CapsuleCollider:
   m_ObjectHideFlags: 0

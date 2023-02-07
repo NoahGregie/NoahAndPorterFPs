@@ -35,7 +35,7 @@ public class SpecialRathomingScript : MonoBehaviour
     Vector3 moveDirection;
 
     public float force;
-
+    public PlayerHealth ph;
     void Start()
     {
         rig = GetComponent<Rigidbody>();
@@ -45,8 +45,8 @@ public class SpecialRathomingScript : MonoBehaviour
         // animator.SetBool("PlayRun", false);
 
         rig.isKinematic = true;
-
-      //  StartCoroutine(attackCooldown());
+        
+        //StartCoroutine(attackCooldown());
     }
 
     // Update is called onc
@@ -79,7 +79,7 @@ public class SpecialRathomingScript : MonoBehaviour
  
             animator.SetBool("PlaySpecialRun", true);
             transform.LookAt(target);
-            Debug.Log("movovmoemvoe");
+            //Debug.Log("movovmoemvoe");
             rig.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
 
 
@@ -100,19 +100,38 @@ public class SpecialRathomingScript : MonoBehaviour
         }
         // ATTACK SCRIPT
         float distance = Vector3.Distance(self.transform.position, player.transform.position);
-        Debug.Log(distance);
+        //Debug.Log(distance);
         if(distance <= 5){
             animator.SetBool("PlayAttack", true);
             moveSpeed = 0;
-           
+            //AOE
+            Debug.Log("HELP ME");
+            checkForPlayer();
+            
             //Cooldown
-           // IEnumerator attackCooldown(){
-           //     yield return new waitforseconds(3f);
-                //my code here after 3 seconds
-           // }
+           // Invoke("filler", 5f); // Name of the method and time before it calls
         }
         if(distance > 5){
             animator.SetBool("PlayAttack", false);
+        }
+
+        //cooldown method
+       
+        //check for player to kill
+        void checkForPlayer()
+        {
+            Debug.Log("Player check called");
+            Collider[] colliders = Physics.OverlapSphere(transform.position, 99f);
+            foreach(Collider c in colliders)
+            {
+                PlayerHealth ph = c.GetComponent<PlayerHealth>();
+                if(distance <= 50){ //(ph != null){
+                    Debug.Log("Nan ihir Gelair Mordor");
+                    ph.TakeDamage(20);
+                    //ph.GetComponent<PlayerHealth>().TakeDamage(20);
+                    //c.GetComponent<PlayerHealth>().TakeDamage(20);
+                }
+            }
         }
 
     }
