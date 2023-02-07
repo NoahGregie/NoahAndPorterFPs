@@ -43,7 +43,7 @@ public class gerndae : MonoBehaviour
 
        Collider[] colliders = Physics.OverlapSphere(transform.position, radius);
 
-        foreach (Collider nearbyObject)
+      //foreach (Collider nearbyObject)
 
 
 

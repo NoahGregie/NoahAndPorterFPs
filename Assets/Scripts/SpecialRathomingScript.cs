@@ -46,7 +46,7 @@ public class SpecialRathomingScript : MonoBehaviour
 
         rig.isKinematic = true;
 
-        StartCoroutine(attackCooldown());
+      //  StartCoroutine(attackCooldown());
     }
 
     // Update is called onc
@@ -106,10 +106,10 @@ public class SpecialRathomingScript : MonoBehaviour
             moveSpeed = 0;
            
             //Cooldown
-            IEnumerator attackCooldown(){
-                yield return new waitforseconds(3f);
+           // IEnumerator attackCooldown(){
+           //     yield return new waitforseconds(3f);
                 //my code here after 3 seconds
-            }
+           // }
         }
         if(distance > 5){
             animator.SetBool("PlayAttack", false);
