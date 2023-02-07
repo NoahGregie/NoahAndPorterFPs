@@ -15,7 +15,7 @@ public class projectile : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
 
-            Debug.Log("salami");
+            //Debug.Log("salami");
             ph = collision.gameObject.GetComponent<PlayerHealth>();
             ph.TakeDamage(1);
 
