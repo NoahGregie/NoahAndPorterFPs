@@ -93,7 +93,7 @@ public class PlayerHealth : MonoBehaviour
     }
     public void TakeDamage(float damage)
     {
-
+        Debug.Log("Warcrimes");
         health -= damage;
         lerpTimer = 0f;
         durationTimer = 0;

@@ -36,6 +36,7 @@ public class SpecialRathomingScript : MonoBehaviour
 
     public float force;
     public PlayerHealth ph;
+  //  public GameObject playertarget;
     void Start()
     {
         rig = GetComponent<Rigidbody>();
@@ -106,7 +107,7 @@ public class SpecialRathomingScript : MonoBehaviour
             moveSpeed = 0;
             //AOE
             Debug.Log("HELP ME");
-            checkForPlayer();
+            //checkForPlayer();
             
             //Cooldown
            // Invoke("filler", 5f); // Name of the method and time before it calls
@@ -121,15 +122,17 @@ public class SpecialRathomingScript : MonoBehaviour
         void checkForPlayer()
         {
             Debug.Log("Player check called");
-            Collider[] colliders = Physics.OverlapSphere(transform.position, 99f);
+            Collider[] colliders = Physics.OverlapSphere(transform.position, 2f);
             foreach(Collider c in colliders)
             {
-                PlayerHealth ph = c.GetComponent<PlayerHealth>();
-                if(distance <= 50){ //(ph != null){
+                
+                //if(distance <= 50){
+                if(ph != null){
+                    //c.GetComponent<Player>().TakeDamage(20);
                     Debug.Log("Nan ihir Gelair Mordor");
-                    ph.TakeDamage(20);
-                    //ph.GetComponent<PlayerHealth>().TakeDamage(20);
-                    //c.GetComponent<PlayerHealth>().TakeDamage(20);
+                    ph.TakeDamage(1);
+                    Debug.Log("ph.TakeDamage Called!");
+                    
                 }
             }
         }
