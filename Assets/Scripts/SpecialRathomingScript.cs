@@ -36,6 +36,8 @@ public class SpecialRathomingScript : MonoBehaviour
 
     public float force;
     public PlayerHealth ph;
+    public bool pause = false;
+    public bool attackComplete = false;
   //  public GameObject playertarget;
     void Start()
     {
@@ -46,7 +48,7 @@ public class SpecialRathomingScript : MonoBehaviour
         // animator.SetBool("PlayRun", false);
 
         rig.isKinematic = true;
-        
+
         //StartCoroutine(attackCooldown());
     }
 
@@ -102,15 +104,19 @@ public class SpecialRathomingScript : MonoBehaviour
         // ATTACK SCRIPT
         float distance = Vector3.Distance(self.transform.position, player.transform.position);
         //Debug.Log(distance);
-        if(distance <= 5){
-            animator.SetBool("PlayAttack", true);
-            moveSpeed = 0;
-            //AOE
-            Debug.Log("HELP ME");
-            //checkForPlayer();
-            
-            //Cooldown
-           // Invoke("filler", 5f); // Name of the method and time before it calls
+        if (distance <= 5) {
+            if (pause == false)
+            {
+                animator.SetBool("PlayAttack", true);
+                moveSpeed = 0;
+                StartCoroutine(attackWait());
+                if (attackComplete = true){
+                //AOE
+                Debug.Log("HELP ME");
+                checkForPlayer();
+                StartCoroutine(waiter());
+                }
+            }
         }
         if(distance > 5){
             animator.SetBool("PlayAttack", false);
@@ -125,18 +131,33 @@ public class SpecialRathomingScript : MonoBehaviour
             Collider[] colliders = Physics.OverlapSphere(transform.position, 2f);
             foreach(Collider c in colliders)
             {
-                
                 //if(distance <= 50){
                 if(ph != null){
+                    //if(pause != true)
                     //c.GetComponent<Player>().TakeDamage(20);
                     Debug.Log("Nan ihir Gelair Mordor");
                     ph.TakeDamage(1);
-                    Debug.Log("ph.TakeDamage Called!");
-                    
+                    //Debug.Log("ph.TakeDamage Called!");
+                    //StartCoroutine(waiter());
+
                 }
             }
         }
-
+        IEnumerator waiter()
+        {
+            
+            //Debug.Log("Gloria Fortis Miles");
+            pause = true;
+            yield return new WaitForSeconds(3);
+            pause = false;
+            Debug.Log("Reloaded");
+        }
+        IEnumerator attackWait()
+        {
+            attackComplete = false;
+            yield return new WaitForSeconds(2);
+            attackComplete = true;
+        }
     }
 
 
