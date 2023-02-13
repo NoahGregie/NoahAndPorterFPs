@@ -19,7 +19,7 @@ public class EnemyHealth : MonoBehaviour
     PlayerHealth ph;
     public GameObject player;
 
-
+    public GameObject hurt;
     void Start()
     {
 
@@ -46,7 +46,7 @@ public class EnemyHealth : MonoBehaviour
     public void AddjustCurrentHealth(float adj)
     {
         currentHealth += adj;
-
+       
         if (currentHealth <= 0)
         {
             currentHealth = 0;

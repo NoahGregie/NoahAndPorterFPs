@@ -32,7 +32,7 @@ public class CollisionDetection : MonoBehaviour
             print("SwordHit");
             eh = other.gameObject.GetComponent<EnemyHealth>();
             eh.AddjustCurrentHealth(-1);
-
+            Instantiate(HitParticle, transform.position, transform.rotation);
 
 
         }
@@ -43,6 +43,8 @@ public class CollisionDetection : MonoBehaviour
             rh.AddjustCurrentHealth(-1);
 
         }
+
+
 
 
 
