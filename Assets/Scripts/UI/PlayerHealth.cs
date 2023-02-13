@@ -21,8 +21,8 @@ public class PlayerHealth : MonoBehaviour
 
 
     public bool timer = true;
-    
-
+    public float radius;
+  
 
     private float durationTimer;
     // Start is called before the first frame update
@@ -35,6 +35,7 @@ public class PlayerHealth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        expolion();
         health = Mathf.Clamp(health, 0, maxHealth);
         UpdateHealthUI();
         if (overlay.color.a > 0)
@@ -124,6 +125,33 @@ public class PlayerHealth : MonoBehaviour
             StartCoroutine(ExecuteAfterTime(5));
         }
 
+
+
+    }
+
+
+    public void expolion()
+    {
+        Debug.Log("expolison");
+        Collider[] colliders = Physics.OverlapSphere(transform.position, radius);
+
+        foreach (Collider nearbyObject in colliders)
+        {
+            EnemyGerndae eg =nearbyObject.GetComponent<EnemyGerndae>();
+            Rigidbody rb = nearbyObject.GetComponent<Rigidbody>();
+
+
+            if (eg !=true )
+            {
+                //TakeDamage(10);
+               // eg.dealdamage = false;
+                Debug.Log("dealdamage");
+            }
+        }
+
+        
+            
+        
 
 
     }
