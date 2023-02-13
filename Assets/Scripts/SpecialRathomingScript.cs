@@ -142,6 +142,7 @@ public class SpecialRathomingScript : MonoBehaviour
                     //Debug.Log("ph.TakeDamage Called!");
                     //StartCoroutine(waiter());
 
+
                 }
             }
         }
