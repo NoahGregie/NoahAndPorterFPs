@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class gerndae : MonoBehaviour
+public class EnemyGerndae : MonoBehaviour
 {
 
 
@@ -14,6 +14,12 @@ public class gerndae : MonoBehaviour
     float countdown;
     public float force = 700f;
     bool hasExploded = false;
+
+   public  bool dealdamage = false;
+
+    public PlayerHealth ph;
+  
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,10 +31,11 @@ public class gerndae : MonoBehaviour
     {
         countdown -= Time.deltaTime;
 
-        if(countdown <= 0f && !hasExploded )
+        if (countdown <= 0f && !hasExploded)
         {
 
-            Explosion();
+           // Explosion();
+           
             hasExploded = true;
 
 
@@ -36,26 +43,26 @@ public class gerndae : MonoBehaviour
 
     }
 
-    void Explosion()
+     public void Explosion()
     {
 
         //get all nearby objects and then add force to objects
 
         Instantiate(explosioneffect, transform.position, transform.rotation);
 
-       Collider[] colliders = Physics.OverlapSphere(transform.position, radius);
+        Collider[] colliders = Physics.OverlapSphere(transform.position, radius);
 
-      foreach (Collider nearbyObject in colliders)
+        foreach (Collider nearbyObject in colliders)
         {
-
             Rigidbody rb = nearbyObject.GetComponent<Rigidbody>();
-            EnemyHealth eh = nearbyObject.GetComponent<EnemyHealth>();
-          
-            if(rb!= null &&eh!= null)
+           // PlayerHealth ph = nearbyObject.GetComponent<PlayerHealth>();
+            
+            if (nearbyObject.gameObject.CompareTag("Player") )
             {
-                rb.AddExplosionForce(force, transform.position, radius);
-                eh.AddjustCurrentHealth(-1);
-
+                // rb.AddExplosionForce(force, transform.position, radius);
+              
+                dealdamage = true;
+                Debug.Log("Genade");
             }
 
 
@@ -64,6 +71,11 @@ public class gerndae : MonoBehaviour
 
 
         Destroy(gameObject);
-        
+
     }
+
+
+
+
+    
 }
