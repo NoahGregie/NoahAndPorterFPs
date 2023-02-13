@@ -122,6 +122,8 @@ public class SpecialRathomingScript : MonoBehaviour
             animator.SetBool("PlayAttack", false);
         }
 
+     
+
         //cooldown method
        
         //check for player to kill
@@ -160,7 +162,10 @@ public class SpecialRathomingScript : MonoBehaviour
         }
     }
 
-
+    public void isDead()
+    {
+        moveSpeed = 0;
+    }
 
 
 

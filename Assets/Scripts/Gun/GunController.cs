@@ -156,7 +156,7 @@ public class GunController : MonoBehaviour
         StartCoroutine(MuzzleFlash());
 
         RayCastForEnemy();
-      
+        RayCastForRatOgre();
         yield return new WaitForSeconds(fireRate);
         canShoot = true;
     }
@@ -176,33 +176,74 @@ public class GunController : MonoBehaviour
       //                       starting postition         direction of ray        max distance    
         if (Physics.Raycast(transform.parent.position, transform.parent.forward, out hit, Mathf.Infinity, worldLayer))
                 {
-            try {
-              
-               // Debug.Log("hit");
-                Rigidbody rb = hit.transform.GetComponent<Rigidbody>();
-                MeshRenderer mr = hit.transform.GetComponent<MeshRenderer>();
-                CapsuleCollider cc = hit.transform.GetComponent<CapsuleCollider>();
-                MeshFilter mf = hit.transform.GetComponent<MeshFilter>();
-                rb.constraints = RigidbodyConstraints.None;
-                rb.AddForce(transform.parent.transform.forward * 700);
-                EnemyHealth EnemyHealth = hit.collider.GetComponent<EnemyHealth>();
-                EnemyHealth.AddjustCurrentHealth(-1);
-                ratOgreHealth ratOgreHealth = hit.collider.GetComponent<ratOgreHealth>();
-                ratOgreHealth.AddjustCurrentHealth(-1);
-                //Health--;
-                // if (Health == 0)
-                // {
-                //   Destroy(mr );
-                //    Destroy(rb);
-                //    Destroy(cc);
-                //   Destroy(mf);
-                //}
+            if (hit.collider.gameObject.tag != "BigEnemy")
+            {
+                try
+                {
 
+                    // Debug.Log("hit");
+                    Rigidbody rb = hit.transform.GetComponent<Rigidbody>();
+                    MeshRenderer mr = hit.transform.GetComponent<MeshRenderer>();
+                    CapsuleCollider cc = hit.transform.GetComponent<CapsuleCollider>();
+                    MeshFilter mf = hit.transform.GetComponent<MeshFilter>();
+                    rb.constraints = RigidbodyConstraints.None;
+                    rb.AddForce(transform.parent.transform.forward * 700);
+
+                    //Clanrat Damaging Script
+                    EnemyHealth EnemyHealth = hit.collider.GetComponent<EnemyHealth>();
+                    EnemyHealth.AddjustCurrentHealth(-1);
+
+                    //Rat Ogre Damaging Script
+                    //ratOgreHealth ratOgreHealth = hit.collider.GetComponent<ratOgreHealth>();
+                    //ratOgreHealth.AddjustCurrentHealth(-1);
+
+                    //Health--;
+                    // if (Health == 0)
+                    // {
+                    //   Destroy(mr );
+                    //    Destroy(rb);
+                    //    Destroy(cc);
+                    //   Destroy(mf);
+                    //}
+
+                }
+                catch { }
             }
-            catch { }
-
         }
                 
+
+    }
+
+
+    void RayCastForRatOgre()
+    {
+        RaycastHit hit;
+        //                       starting postition         direction of ray        max distance    
+        if (Physics.Raycast(transform.parent.position, transform.parent.forward, out hit, Mathf.Infinity, worldLayer))
+        {
+            if (hit.collider.gameObject.tag == "BigEnemy")
+            {
+                try
+                {
+
+                    // Debug.Log("hit");
+                    Rigidbody rb = hit.transform.GetComponent<Rigidbody>();
+                    MeshRenderer mr = hit.transform.GetComponent<MeshRenderer>();
+                    CapsuleCollider cc = hit.transform.GetComponent<CapsuleCollider>();
+                    MeshFilter mf = hit.transform.GetComponent<MeshFilter>();
+                    //rb.constraints = RigidbodyConstraints.None;
+                    //rb.AddForce(transform.parent.transform.forward * 700);
+
+                    //Rat Ogre Damaging Script
+                    ratOgreHealth ratOgreHealth = hit.collider.GetComponent<ratOgreHealth>();
+                    ratOgreHealth.AddjustCurrentHealth(-1);
+
+
+                }
+                catch { }
+            }
+        }
+
 
     }
 }
