@@ -43,16 +43,21 @@ public class ratOgreHealth : MonoBehaviour
 
     public void AddjustCurrentHealth(float adj)
     {
+        Debug.Log("RAT OGRE FEELS NO PAIN!!!!!!!!!");
         currentHealth += adj;
-       
+        Debug.Log(currentHealth);
+        Debug.Log(adj);
         if (currentHealth <= 0) 
         {
             currentHealth = 0;
             isDead = true;
-         
+            //Debug.Log("Attack of the Dead RatOGRE");
+
+            
 
             animator.SetBool("PlaySpecialRun", false);
-            animator.SetBool("playSepcialDeath", true);
+            animator.SetBool("PlaySpecialDeath", true);
+
             //   Instantiate(Blood, new Vector3(xPos, 1, zPos), Quaternion.identity);
 
         }
@@ -68,12 +73,15 @@ public class ratOgreHealth : MonoBehaviour
         }
         if (isDead == true)
         {
-            StartCoroutine(ExecuteAfterTime(1));
-
+            StartCoroutine(ExecuteAfterTime(2));
 
         }
         IEnumerator ExecuteAfterTime(float time)
         {
+
+            SpecialRathomingScript specialRathomingScript = GetComponent<SpecialRathomingScript>();
+            specialRathomingScript.isDead();
+
             yield return new WaitForSeconds(time);
 
             Destroy(gameObject);

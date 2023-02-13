@@ -5052,14 +5052,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80d2c8b3077d0524fac6a18a1d468dd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHealth: 10
-  maxHealth: 10
+  currentHealth: 500
+  maxHealth: 500
   isDead: 0
-  animator: {fileID: 0}
+  animator: {fileID: 433168638}
   xPos: 0
   yPos: 0
   zPos: 0
   Blood: {fileID: 0}
+--- !u!95 &433168638 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 8d3eb984f35f5ba4d923b7b46a9f5e51, type: 3}
+  m_PrefabInstance: {fileID: 1473131407}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &446325285
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15951,7 +15956,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 8d3eb984f35f5ba4d923b7b46a9f5e51, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: BigEnemy
       objectReference: {fileID: 0}
     - target: {fileID: 1517055008518661710, guid: 8d3eb984f35f5ba4d923b7b46a9f5e51, type: 3}
       propertyPath: m_Layer
