@@ -38,7 +38,14 @@ public class SpecialRathomingScript : MonoBehaviour
     public PlayerHealth ph;
     public bool pause = false;
     public bool attackComplete = false;
-  //  public GameObject playertarget;
+    public GameObject shockwave;
+
+    public bool C1Running = false;
+    public bool C2Running = false;
+
+    //  public GameObject playertarget;
+    
+    
     void Start()
     {
         rig = GetComponent<Rigidbody>();
@@ -51,9 +58,6 @@ public class SpecialRathomingScript : MonoBehaviour
 
         //StartCoroutine(attackCooldown());
     }
-
-    // Update is called onc
-    // e per frame
 
 
 
@@ -104,19 +108,26 @@ public class SpecialRathomingScript : MonoBehaviour
         // ATTACK SCRIPT
         float distance = Vector3.Distance(self.transform.position, player.transform.position);
         //Debug.Log(distance);
-        if (distance <= 5) {
+        if (distance <= 8) {
             if (pause == false)
             {
                 animator.SetBool("PlayAttack", true);
                 moveSpeed = 0;
-                StartCoroutine(attackWait());
-                if (attackComplete = true){
-                //AOE
-                Debug.Log("HELP ME");
-                checkForPlayer();
-                StartCoroutine(waiter());
+                if (!C1Running){ StartCoroutine(attackWait()); }
+
+
+                Debug.Log("Summon the Diet");
+                if (attackComplete == true){
+                    Debug.Log("VIRILITER AGITE!");
+                    //AOE
+                    Instantiate(shockwave, transform.position, transform.rotation);
+                    Debug.Log("HELP ME");
+                    checkForPlayer();
+                    if (!C2Running) { StartCoroutine(waiter()); }
                 }
+                if(attackComplete == false) { Debug.Log("Time Skips"); }
             }
+  
         }
         if(distance > 5){
             animator.SetBool("PlayAttack", false);
@@ -148,18 +159,25 @@ public class SpecialRathomingScript : MonoBehaviour
         }
         IEnumerator waiter()
         {
-            
+            C2Running = true;
             //Debug.Log("Gloria Fortis Miles");
             pause = true;
-            yield return new WaitForSeconds(3);
+            yield return new WaitForSeconds(1);
             pause = false;
             Debug.Log("Reloaded");
+            C2Running = false;
+            Debug.Log("Chancellor of the Exchequer!");
+
         }
         IEnumerator attackWait()
         {
+            C1Running = true;
             attackComplete = false;
-            yield return new WaitForSeconds(2);
+            yield return new WaitForSeconds(1);
             attackComplete = true;
+            yield return new WaitForSeconds(2);
+            Debug.Log("atkComplete TRUE");
+            C1Running = false;
         }
     }
 
@@ -167,12 +185,6 @@ public class SpecialRathomingScript : MonoBehaviour
     {
         moveSpeed = 0;
     }
-
-
-
-
-
-
 
 
 
