@@ -415,6 +415,7 @@ MonoBehaviour:
   zPos: 0
   Blood: {fileID: 1000013355911406, guid: d32aa916f50cac94db11e6f19821a58f, type: 3}
   player: {fileID: 1391966011}
+  hurt: {fileID: 0}
 --- !u!114 &74264478
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5040,6 +5041,7 @@ MonoBehaviour:
   ph: {fileID: 1391966021}
   pause: 0
   attackComplete: 0
+  shockwave: {fileID: 1016006519}
 --- !u!114 &433168637
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5725,6 +5727,7 @@ MonoBehaviour:
   zPos: 0
   Blood: {fileID: 1000013355911406, guid: d32aa916f50cac94db11e6f19821a58f, type: 3}
   player: {fileID: 1391966011}
+  hurt: {fileID: 0}
 --- !u!114 &453159411
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5851,6 +5854,7 @@ MonoBehaviour:
   zPos: 0
   Blood: {fileID: 1000013355911406, guid: d32aa916f50cac94db11e6f19821a58f, type: 3}
   player: {fileID: 1391966011}
+  hurt: {fileID: 0}
 --- !u!136 &509036212
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -5917,6 +5921,7 @@ MonoBehaviour:
   zPos: 0
   Blood: {fileID: 1000013355911406, guid: d32aa916f50cac94db11e6f19821a58f, type: 3}
   player: {fileID: 1391966011}
+  hurt: {fileID: 0}
 --- !u!114 &557990683
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7399,6 +7404,7 @@ MonoBehaviour:
   zPos: 0
   Blood: {fileID: 1000013355911406, guid: d32aa916f50cac94db11e6f19821a58f, type: 3}
   player: {fileID: 1391966011}
+  hurt: {fileID: 0}
 --- !u!114 &708125218
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7526,6 +7532,7 @@ MonoBehaviour:
   zPos: 0
   Blood: {fileID: 1000013355911406, guid: d32aa916f50cac94db11e6f19821a58f, type: 3}
   player: {fileID: 1391966011}
+  hurt: {fileID: 0}
 --- !u!114 &749120392
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10431,7 +10438,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10308, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 8d9e4fc20c0a70340a842124e210bb03, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10456,7 +10463,7 @@ ParticleSystemRenderer:
   m_MeshDistribution: 0
   m_SortMode: 0
   m_MinParticleSize: 0
-  m_MaxParticleSize: 0.5
+  m_MaxParticleSize: 20
   m_CameraVelocityScale: 0
   m_VelocityScale: 0
   m_LengthScale: 2
@@ -10466,9 +10473,9 @@ ParticleSystemRenderer:
   m_RenderAlignment: 0
   m_Pivot: {x: 0, y: 0, z: 0}
   m_Flip: {x: 0, y: 0, z: 0}
-  m_UseCustomVertexStreams: 0
+  m_UseCustomVertexStreams: 1
   m_EnableGPUInstancing: 1
-  m_ApplyActiveColorSpace: 1
+  m_ApplyActiveColorSpace: 0
   m_AllowRoll: 1
   m_FreeformStretching: 0
   m_RotateWithStretchDirection: 1
@@ -10497,7 +10504,7 @@ ParticleSystem:
   ringBufferMode: 0
   ringBufferLoopRange: {x: 0, y: 1}
   emitterVelocityMode: 1
-  looping: 1
+  looping: 0
   prewarm: 0
   playOnAwake: 1
   useUnscaledTime: 0
@@ -10734,7 +10741,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 25
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -15255,7 +15262,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1016006519}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -45.116005, y: -0.9397535, z: -91.58375}
+  m_LocalPosition: {x: 21.72, y: 2.47, z: -81.55}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -16843,6 +16850,7 @@ MonoBehaviour:
   zPos: 0
   Blood: {fileID: 1000013355911406, guid: d32aa916f50cac94db11e6f19821a58f, type: 3}
   player: {fileID: 1391966011}
+  hurt: {fileID: 0}
 --- !u!136 &1218052379
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -17553,6 +17561,7 @@ MonoBehaviour:
   zPos: 0
   Blood: {fileID: 1000013355911406, guid: d32aa916f50cac94db11e6f19821a58f, type: 3}
   player: {fileID: 1391966011}
+  hurt: {fileID: 0}
 --- !u!114 &1283762411
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17649,6 +17658,7 @@ MonoBehaviour:
   zPos: 0
   Blood: {fileID: 1000013355911406, guid: d32aa916f50cac94db11e6f19821a58f, type: 3}
   player: {fileID: 1391966011}
+  hurt: {fileID: 0}
 --- !u!114 &1310575106
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18389,6 +18399,7 @@ MonoBehaviour:
   zPos: 0
   Blood: {fileID: 1000013355911406, guid: d32aa916f50cac94db11e6f19821a58f, type: 3}
   player: {fileID: 1391966011}
+  hurt: {fileID: 0}
 --- !u!114 &1348664894
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19051,27 +19062,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c46d37a3b998a2e4c8695d0c0ea8159a, type: 3}
---- !u!1 &1377526272 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3845641737508297274, guid: 95e4af868b139bc458807326de23e8c5, type: 3}
-  m_PrefabInstance: {fileID: 3845641738882545722}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1377526278
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1377526272}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e2aef41102e1e094b9be469293bd5ef7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  wp: {fileID: 2023345220}
-  HitParticle: {fileID: 414896040}
-  eh: {fileID: 1457484059}
-  rh: {fileID: 0}
 --- !u!1 &1386756949 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c46d37a3b998a2e4c8695d0c0ea8159a, type: 3}
@@ -19119,6 +19109,7 @@ MonoBehaviour:
   zPos: 0
   Blood: {fileID: 1000013355911406, guid: d32aa916f50cac94db11e6f19821a58f, type: 3}
   player: {fileID: 1391966011}
+  hurt: {fileID: 0}
 --- !u!114 &1386756953
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20372,6 +20363,7 @@ MonoBehaviour:
   zPos: 0
   Blood: {fileID: 1000013355911406, guid: d32aa916f50cac94db11e6f19821a58f, type: 3}
   player: {fileID: 1391966011}
+  hurt: {fileID: 0}
 --- !u!136 &1457484060
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -21746,6 +21738,7 @@ MonoBehaviour:
   zPos: 0
   Blood: {fileID: 1000013355911406, guid: d32aa916f50cac94db11e6f19821a58f, type: 3}
   player: {fileID: 1391966011}
+  hurt: {fileID: 0}
 --- !u!136 &1535614761
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -22593,6 +22586,7 @@ MonoBehaviour:
   zPos: 0
   Blood: {fileID: 1000013355911406, guid: d32aa916f50cac94db11e6f19821a58f, type: 3}
   player: {fileID: 1391966011}
+  hurt: {fileID: 0}
 --- !u!114 &1661313378
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22808,6 +22802,7 @@ MonoBehaviour:
   zPos: 0
   Blood: {fileID: 1000013355911406, guid: d32aa916f50cac94db11e6f19821a58f, type: 3}
   player: {fileID: 1391966011}
+  hurt: {fileID: 0}
 --- !u!114 &1678287633
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24323,6 +24318,7 @@ MonoBehaviour:
   zPos: 0
   Blood: {fileID: 1000013355911406, guid: d32aa916f50cac94db11e6f19821a58f, type: 3}
   player: {fileID: 1391966011}
+  hurt: {fileID: 0}
 --- !u!114 &1873919581
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25666,6 +25662,7 @@ MonoBehaviour:
   zPos: 0
   Blood: {fileID: 1000013355911406, guid: d32aa916f50cac94db11e6f19821a58f, type: 3}
   player: {fileID: 1391966011}
+  hurt: {fileID: 0}
 --- !u!114 &2017183425
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26119,6 +26116,7 @@ MonoBehaviour:
   zPos: 0
   Blood: {fileID: 1000013355911406, guid: d32aa916f50cac94db11e6f19821a58f, type: 3}
   player: {fileID: 1391966011}
+  hurt: {fileID: 0}
 --- !u!114 &2109763233
 MonoBehaviour:
   m_ObjectHideFlags: 0
