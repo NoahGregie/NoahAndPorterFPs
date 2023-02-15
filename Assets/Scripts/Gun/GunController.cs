@@ -2,6 +2,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class GunController : MonoBehaviour
 {
@@ -54,6 +55,8 @@ public class GunController : MonoBehaviour
     public LayerMask worldLayer;
     int layerMask = 1 << 7;
 
+
+    public TMP_Text text;
     private void Start()
     {
         currentAmmonInClip = clipSize;
@@ -65,7 +68,7 @@ public class GunController : MonoBehaviour
     {
 
         DetermineAim();
-
+        text.SetText(currentAmmonInClip + "/" + clipSize);
 
 
    //  DetermineRotation();
