@@ -8,6 +8,7 @@ public class CollisionDetection : MonoBehaviour
     public GameObject HitParticle;
     public EnemyHealth eh;
     public ratOgreHealth rh;
+    public int sworddamage;
     // private void OnTriggerEnter(Collider other)
     //  {
 
@@ -31,7 +32,7 @@ public class CollisionDetection : MonoBehaviour
 
             print("SwordHit");
             eh = other.gameObject.GetComponent<EnemyHealth>();
-            eh.AddjustCurrentHealth(-1);
+            eh.AddjustCurrentHealth(sworddamage);
             Instantiate(HitParticle, transform.position, transform.rotation);
 
 
@@ -40,7 +41,7 @@ public class CollisionDetection : MonoBehaviour
         {
 
             rh = other.gameObject.GetComponent<ratOgreHealth>();
-            rh.AddjustCurrentHealth(-1);
+            rh.AddjustCurrentHealth(sworddamage);
 
         }
 
