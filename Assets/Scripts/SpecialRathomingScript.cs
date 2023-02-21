@@ -116,12 +116,12 @@ public class SpecialRathomingScript : MonoBehaviour
                 if (!C1Running){ StartCoroutine(attackWait()); }
 
 
-                Debug.Log("Summon the Diet");
+                //Debug.Log("Summon the Diet");
                 if (attackComplete == true){
-                    Debug.Log("VIRILITER AGITE!");
+                    //Debug.Log("VIRILITER AGITE!");
                     //AOE
                     Instantiate(shockwave, transform.position, transform.rotation);
-                    Debug.Log("HELP ME");
+                    //Debug.Log("HELP ME");
                     checkForPlayer();
                     if (!C2Running) { StartCoroutine(waiter()); }
                 }
@@ -148,8 +148,8 @@ public class SpecialRathomingScript : MonoBehaviour
                 if(ph != null){
                     //if(pause != true)
                     //c.GetComponent<Player>().TakeDamage(20);
-                    Debug.Log("Nan ihir Gelair Mordor");
-                    ph.TakeDamage(1);
+                    //Debug.Log("Nan ihir Gelair Mordor");
+                    ph.TakeDamage(10);
                     //Debug.Log("ph.TakeDamage Called!");
                     //StartCoroutine(waiter());
 
@@ -162,11 +162,11 @@ public class SpecialRathomingScript : MonoBehaviour
             C2Running = true;
             //Debug.Log("Gloria Fortis Miles");
             pause = true;
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(1.84f);
             pause = false;
             Debug.Log("Reloaded");
             C2Running = false;
-            Debug.Log("Chancellor of the Exchequer!");
+            //Debug.Log("Chancellor of the Exchequer!");
 
         }
         IEnumerator attackWait()
@@ -175,7 +175,7 @@ public class SpecialRathomingScript : MonoBehaviour
             attackComplete = false;
             yield return new WaitForSeconds(1);
             attackComplete = true;
-            yield return new WaitForSeconds(2);
+            yield return new WaitForSeconds(3);
             Debug.Log("atkComplete TRUE");
             C1Running = false;
         }
