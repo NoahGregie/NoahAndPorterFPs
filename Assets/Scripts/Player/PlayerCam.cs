@@ -52,12 +52,25 @@ public class PlayerCam : MonoBehaviour
     }
     public void recoil()
     {
-        Vector2 mouseAxis = new Vector2(Input.GetAxisRaw("Mouse X"), Input.GetAxisRaw("Mouse Y"));
+        //recoil
+        Vector2 mouseAxis = new Vector2(Input.GetAxisRaw("Mouse X" ), Input.GetAxisRaw("Mouse Y"));
+        Vector2 recoilAddition = new Vector2(-5, -20);
+
+
+
 
         currentRotation2 += mouseAxis;
         currentRotation2.x = Mathf.Clamp(-1, -90, 90);
 
+        
+
+
+
         xRotation += currentRotation2.x;
+        xRotation += recoilAddition.x;
+    
+       
+  
 
      
      //   yRotation += currentRotation2.y;

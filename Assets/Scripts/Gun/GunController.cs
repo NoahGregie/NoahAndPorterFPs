@@ -137,12 +137,13 @@ public class GunController : MonoBehaviour
 
         if(randomizeRecoil)
         {
-            float xRecoil = Random.Range(-randomRecoilConstraints.x, randomRecoilConstraints.x);
-          float yRecoil = Random.Range(randomRecoilConstraints.y, randomRecoilConstraints.y);
+            // float xRecoil = Random.Range(-randomRecoilConstraints.x, randomRecoilConstraints.x);
+            // float yRecoil = Random.Range(-randomRecoilConstraints.y, randomRecoilConstraints.y);
+
+            float xRecoil = 5;
+            float yRecoil = 5;
 
 
-            
-            
             Vector2 recoil = new Vector2(xRecoil, yRecoil);
 
            // pc = GetComponent<PlayerCam>();
