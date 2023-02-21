@@ -1,6 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
+
 
 public class WeaponController : MonoBehaviour
 {
@@ -9,6 +12,7 @@ public class WeaponController : MonoBehaviour
     public bool CanAttack = true;
     public float AttackCooldown = 1f;
     public bool isAttacking = false;
+    public TMP_Text text;
     private void Update()
     {
         if (Input.GetMouseButtonDown(0))
