@@ -15,7 +15,7 @@ public class DisplayText : MonoBehaviour
     {
 
 
-        text.SetText("dog");
+       // text.SetText("dog");
 
     }
 
