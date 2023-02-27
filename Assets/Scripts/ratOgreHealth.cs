@@ -49,11 +49,9 @@ public class ratOgreHealth : MonoBehaviour
         Debug.Log(adj);
         if (currentHealth <= 0) 
         {
-            currentHealth = 0;
+            //currentHealth = 0;
             isDead = true;
             //Debug.Log("Attack of the Dead RatOGRE");
-
-            
 
             animator.SetBool("PlaySpecialRun", false);
             animator.SetBool("PlaySpecialDeath", true);
