@@ -54,7 +54,7 @@ public class PlayerCam : MonoBehaviour
     {
         //recoil
         Vector2 mouseAxis = new Vector2(Input.GetAxisRaw("Mouse X" ), Input.GetAxisRaw("Mouse Y"));
-        Vector2 recoilAddition = new Vector2(-5, -20);
+        Vector2 recoilAddition = new Vector2(-1, -20);
 
 
 
