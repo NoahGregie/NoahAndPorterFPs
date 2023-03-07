@@ -3,7 +3,22 @@ guid: 6f2f3cf0e7ae1934c84e35500cceb6b9
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: emp_greatswords_sword_2h_02_lod0
+    second: {fileID: 2100000, guid: 69306e5f19c4a7e4188403e69335fd9c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: emp_greatswords_sword_2h_02_lod1
+    second: {fileID: 2100000, guid: 69306e5f19c4a7e4188403e69335fd9c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: emp_greatswords_sword_2h_02_lod2
+    second: {fileID: 2100000, guid: 69306e5f19c4a7e4188403e69335fd9c, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
