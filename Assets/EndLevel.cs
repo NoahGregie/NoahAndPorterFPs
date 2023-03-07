@@ -1,18 +1,43 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EndLevel : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+
+    public bool ok = false;
+
+    public void Update()
     {
-        
+
+
+        GameObject[] gameObjects;
+        gameObjects = GameObject.FindGameObjectsWithTag("Enemy");
+
+
+        if(gameObjects.Length == 0)
+        {
+            endLevel();
+          
+
+        }
+
+     
+
     }
 
-    // Update is called once per frame
-    void Update()
+
+    public void endLevel()
     {
-        
+
+
+      
+        SceneManager.LoadScene(sceneBuildIndex:1);
     }
+
+
+   
+
+
 }
