@@ -177,7 +177,11 @@ public class GunController : MonoBehaviour
     void RayCastForEnemy()
     {
         RaycastHit hit;
-      //                       starting postition         direction of ray        max distance    
+      //
+      //
+      //
+      //
+      //               starting postition         direction of ray        max distance    
         if (Physics.Raycast(transform.parent.position, transform.parent.forward, out hit, Mathf.Infinity, worldLayer))
                 {
             if (hit.collider.gameObject.tag != "BigEnemy")

@@ -46,8 +46,14 @@ public class movemen : MonoBehaviour
     private RaycastHit slopehit;
     private bool exitingBool;
 
-    public Transform orientation;
+    [Header("Timer")]
 
+    public bool TimerIsRunning = false;
+    public float timeRemaining = 10f;
+
+    [Header("RandomStuff")]
+    public Transform orientation;
+   
     float horizontalInput;
     float verticalInput;
 
@@ -58,6 +64,11 @@ public class movemen : MonoBehaviour
     public MovementState state;
 
     public bool crouch;
+
+    FillCode fc;
+    public GameObject Fill;
+
+
     public enum MovementState
     {
         walking,
@@ -99,6 +110,28 @@ public class movemen : MonoBehaviour
         //no clip
        
 
+        if(TimerIsRunning)
+        {
+
+            if(timeRemaining > 0)
+            {
+
+                timeRemaining -= Time.deltaTime;
+                Debug.Log(timeRemaining);
+
+            }
+            else
+            {
+                Debug.Log("Timerdone");
+                TimerIsRunning = false;
+            }
+
+
+
+        }
+
+
+
 
     }
 
@@ -112,7 +145,7 @@ public class movemen : MonoBehaviour
     {
         horizontalInput = Input.GetAxisRaw("Horizontal");
         verticalInput = Input.GetAxisRaw("Vertical");
-
+        fc = Fill.GetComponent < FillCode>();
         // when to jump
         if(Input.GetKey(jumpKey) && readyToJump && grounded)
         {
@@ -130,12 +163,26 @@ public class movemen : MonoBehaviour
             transform.localScale = new Vector3(transform.localScale.x, crouchYScale, transform.localScale.z);
             rb.AddForce(Vector3.down * 5f, ForceMode.Impulse);
             crouch = true;
+            TimerIsRunning = true;
+            
+
+
+
         }
         //stop crouch
         if (Input.GetKeyUp(crouchKey))
         {
             transform.localScale = new Vector3(transform.localScale.x,startYScale, transform.localScale.z);
+            TimerIsRunning = false;
             crouch = false;
+        }
+        if(fc.isDone == true)
+        {
+            Debug.Log("dog");
+            transform.localScale = new Vector3(transform.localScale.x, startYScale, transform.localScale.z);
+            TimerIsRunning = false;
+            crouch = false;
+
         }
     }
 

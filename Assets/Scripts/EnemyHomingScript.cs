@@ -14,7 +14,7 @@ public class EnemyHomingScript : MonoBehaviour
     public float speed;
     Rigidbody rig;
     movemen pm;
-
+    public GameObject playercode;
     public Transform player;
    // public float sightRange, attackRange;
    // public bool playerInSightRange, playerInAttackRange;
@@ -36,10 +36,12 @@ public class EnemyHomingScript : MonoBehaviour
 
     public float force;
     public float force2;
+    
+
     void Start()
     {
         rig = GetComponent<Rigidbody>();
-        pm = GetComponent<movemen>();
+       // pm = GetComponent<movemen>();
         player = GameObject.Find("Player").transform;
         animator = gameObject.GetComponent<Animator>();
         // animator.SetBool("PlayRun", false);
@@ -55,6 +57,7 @@ public class EnemyHomingScript : MonoBehaviour
     
   public  void Update()
     {
+        pm = playercode.GetComponent<movemen>();
 
         grounded = Physics.Raycast(transform.position, Vector3.down, enemyHeight * 0.5f + 0.3f, whatIsGround);
         if (grounded)
@@ -64,9 +67,9 @@ public class EnemyHomingScript : MonoBehaviour
             //  Debug.Log("notntogrounded");
             rig.AddForce(0, force, 0, ForceMode.Force);
 
+        //cd= cone detection
 
-
-        if (cd.active == true)
+        if (cd.active == true &&pm.crouch ==false )
         {
            
 
@@ -82,14 +85,16 @@ public class EnemyHomingScript : MonoBehaviour
          
         }
 
-
+        //automatcily starts in this phase
         if (cd.active == false)
         {
-
+          //  Debug.Log("STOP");
             rig.isKinematic = true;
+            animator.SetBool("PlayRun", false);
             Vector3 pos = Vector3.MoveTowards(transform.position, target.position, speed * Time.fixedDeltaTime);
-         //   pos.y = 1f;
-           // animator.SetBool("PlayRun", false);
+            rig.AddForce(moveDirection.normalized * moveSpeed * 0f, ForceMode.Force);
+            //   pos.y = 1f;
+            // animator.SetBool("PlayRun", false);
             transform.LookAt(target);
            // Debug.Log("stop");
             

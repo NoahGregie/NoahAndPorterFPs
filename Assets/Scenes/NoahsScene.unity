@@ -443,7 +443,7 @@ MonoBehaviour:
   grounded: 0
   groundDrag: 7
   dumb: 0
-  moveSpeed: 20
+  moveSpeed: 10
   force: -100
   force2: 0
 --- !u!136 &74264479
@@ -5304,7 +5304,7 @@ MonoBehaviour:
   grounded: 0
   groundDrag: 7
   dumb: 0
-  moveSpeed: 20
+  moveSpeed: 10
   force: -100
   force2: 0
 --- !u!136 &453159412
@@ -5379,7 +5379,7 @@ MonoBehaviour:
   grounded: 0
   groundDrag: 7
   dumb: 0
-  moveSpeed: 20
+  moveSpeed: 10
   force: -100
   force2: 0
 --- !u!114 &509036211
@@ -5782,7 +5782,7 @@ MonoBehaviour:
   grounded: 0
   groundDrag: 7
   dumb: 0
-  moveSpeed: 20
+  moveSpeed: 10
   force: -100
   force2: 0
 --- !u!136 &557990684
@@ -7429,7 +7429,7 @@ MonoBehaviour:
   grounded: 0
   groundDrag: 7
   dumb: 0
-  moveSpeed: 20
+  moveSpeed: 10
   force: -100
   force2: 0
 --- !u!136 &708125219
@@ -7557,7 +7557,7 @@ MonoBehaviour:
   grounded: 0
   groundDrag: 7
   dumb: 0
-  moveSpeed: 20
+  moveSpeed: 10
   force: -100
   force2: 0
 --- !u!136 &749120393
@@ -11424,7 +11424,7 @@ MonoBehaviour:
   grounded: 0
   groundDrag: 7
   dumb: 0
-  moveSpeed: 20
+  moveSpeed: 10
   force: -100
   force2: 0
 --- !u!114 &1218052378
@@ -12180,6 +12180,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RatOgre
       objectReference: {fileID: 0}
+    - target: {fileID: 8255935332104099396, guid: cc0fe68bf5d73fb4db4dc6321a3d4699, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8780094981124197630, guid: cc0fe68bf5d73fb4db4dc6321a3d4699, type: 3}
       propertyPath: m_RootOrder
       value: 23
@@ -12317,7 +12321,7 @@ MonoBehaviour:
   grounded: 0
   groundDrag: 7
   dumb: 0
-  moveSpeed: 20
+  moveSpeed: 10
   force: -100
   force2: 0
 --- !u!136 &1283762412
@@ -12414,7 +12418,7 @@ MonoBehaviour:
   grounded: 0
   groundDrag: 7
   dumb: 0
-  moveSpeed: 20
+  moveSpeed: 10
   force: -100
   force2: 0
 --- !u!136 &1310575107
@@ -13291,7 +13295,7 @@ MonoBehaviour:
   grounded: 0
   groundDrag: 7
   dumb: 0
-  moveSpeed: 20
+  moveSpeed: 10
   force: -100
   force2: 0
 --- !u!136 &1348664895
@@ -14001,7 +14005,7 @@ MonoBehaviour:
   grounded: 0
   groundDrag: 7
   dumb: 0
-  moveSpeed: 20
+  moveSpeed: 10
   force: -100
   force2: 0
 --- !u!136 &1386756954
@@ -16189,7 +16193,7 @@ MonoBehaviour:
   grounded: 0
   groundDrag: 7
   dumb: 0
-  moveSpeed: 20
+  moveSpeed: 10
   force: -100
   force2: 0
 --- !u!136 &1661313379
@@ -16405,7 +16409,7 @@ MonoBehaviour:
   grounded: 0
   groundDrag: 7
   dumb: 0
-  moveSpeed: 20
+  moveSpeed: 10
   force: -100
   force2: 0
 --- !u!136 &1678287634
@@ -16446,7 +16450,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1702876454
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18036,7 +18040,7 @@ MonoBehaviour:
   grounded: 0
   groundDrag: 7
   dumb: 0
-  moveSpeed: 20
+  moveSpeed: 10
   force: -100
   force2: 0
 --- !u!136 &1873919582
@@ -19380,7 +19384,7 @@ MonoBehaviour:
   grounded: 0
   groundDrag: 7
   dumb: 0
-  moveSpeed: 20
+  moveSpeed: 10
   force: -100
   force2: 0
 --- !u!136 &2017183426
@@ -19803,7 +19807,7 @@ MonoBehaviour:
   grounded: 0
   groundDrag: 7
   dumb: 0
-  moveSpeed: 20
+  moveSpeed: 10
   force: -100
   force2: 0
 --- !u!136 &2109763234
@@ -20109,6 +20113,18 @@ PrefabInstance:
       propertyPath: projectile
       value: 
       objectReference: {fileID: 1440279084}
+    - target: {fileID: 68330760518380968, guid: 2f01ebf8926e81843a4b31ed944f9ac3, type: 3}
+      propertyPath: sightRange
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 68330760518380968, guid: 2f01ebf8926e81843a4b31ed944f9ac3, type: 3}
+      propertyPath: attackRange
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 68330760518380968, guid: 2f01ebf8926e81843a4b31ed944f9ac3, type: 3}
+      propertyPath: timeBetweenAttacks
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 68330760518380969, guid: 2f01ebf8926e81843a4b31ed944f9ac3, type: 3}
       propertyPath: player
       value: 
@@ -20483,6 +20499,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpecialBigRat
       objectReference: {fileID: 0}
+    - target: {fileID: 4563412421208195990, guid: 5ffb1cfc79ca39e4794377b6d34d0b55, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5ffb1cfc79ca39e4794377b6d34d0b55, type: 3}
 --- !u!1001 &3845641738882545722
@@ -20593,6 +20613,10 @@ PrefabInstance:
     - target: {fileID: 3756498935782530137, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: m_Name
       value: SpecialRat
+      objectReference: {fileID: 0}
+    - target: {fileID: 3756498935782530137, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4098462787687052242, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: m_Mesh

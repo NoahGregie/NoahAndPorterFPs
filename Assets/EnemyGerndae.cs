@@ -14,16 +14,18 @@ public class EnemyGerndae : MonoBehaviour
     float countdown;
     public float force = 700f;
     bool hasExploded = false;
+    public float gernadeDamage;
 
    public  bool dealdamage = false;
 
-    public PlayerHealth ph;
-  
+    PlayerHealth ph;
+    public GameObject player;
 
     // Start is called before the first frame update
     void Start()
     {
         countdown = delay;
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
     // Update is called once per frame
@@ -34,7 +36,7 @@ public class EnemyGerndae : MonoBehaviour
         if (countdown <= 0f && !hasExploded)
         {
 
-           // Explosion();
+           Explosion();
            
             hasExploded = true;
 
@@ -54,13 +56,13 @@ public class EnemyGerndae : MonoBehaviour
 
         foreach (Collider nearbyObject in colliders)
         {
-            Rigidbody rb = nearbyObject.GetComponent<Rigidbody>();
-           // PlayerHealth ph = nearbyObject.GetComponent<PlayerHealth>();
-            
+          //  Rigidbody rb = nearbyObject.GetComponent<Rigidbody>();
+           
+            ph = player.GetComponent<PlayerHealth>();
             if (nearbyObject.gameObject.CompareTag("Player") )
             {
                 // rb.AddExplosionForce(force, transform.position, radius);
-              
+                ph.TakeDamage(gernadeDamage);
                 dealdamage = true;
                 Debug.Log("Genade");
             }
