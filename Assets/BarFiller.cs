@@ -40,7 +40,8 @@ public class BarFiller : MonoBehaviour
 
         else
         {
-            // FillCode.SetHealthBarValue(FillCode.GetHealthBarValue() + 0.0001f);
+             FillCode.SetHealthBarValue(FillCode.GetHealthBarValue() + 0.0001f);
+            Debug.Log("Fill");
         }
 
 

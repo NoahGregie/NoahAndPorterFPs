@@ -175,6 +175,7 @@ public class movemen : MonoBehaviour
             transform.localScale = new Vector3(transform.localScale.x,startYScale, transform.localScale.z);
             TimerIsRunning = false;
             crouch = false;
+
         }
         if(fc.isDone == true)
         {

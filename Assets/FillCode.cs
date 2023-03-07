@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class FillCode : MonoBehaviour
 {
-    private static Image HealthBarImage;
+    public static Image HealthBarImage;
     public bool isDone = false;
     /// <summary>
     /// Sets the health bar value
@@ -66,6 +66,10 @@ public class FillCode : MonoBehaviour
 
             isDone = true;
         }
-    }
+        else
+        {
+            isDone = false;
 
+        }
+    }
 }
