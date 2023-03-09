@@ -43,7 +43,7 @@ public class ratOgreHealth : MonoBehaviour
 
     public void AddjustCurrentHealth(float adj)
     {
-        //Debug.Log("RAT OGRE FEELS NO PAIN!!!!!!!!!");
+        Debug.Log("RAT OGRE FEELS NO PAIN!!!!!!!!!");
         currentHealth += adj;
         Debug.Log(currentHealth);
         Debug.Log(adj);
