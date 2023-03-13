@@ -158,7 +158,7 @@ public class SpecialRathomingScript : MonoBehaviour
             }
         }
 
-        AttackAnimComplete();
+        //AttackAnimComplete();
 
 
         IEnumerator waiter()
