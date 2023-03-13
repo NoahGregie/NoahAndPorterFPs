@@ -185,6 +185,13 @@ public class movemen : MonoBehaviour
             crouch = false;
 
         }
+
+
+
+
+
+
+
     }
 
 

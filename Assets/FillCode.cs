@@ -15,6 +15,7 @@ public class FillCode : MonoBehaviour
     {
         HealthBarImage.fillAmount = value;
         
+        
         if (HealthBarImage.fillAmount < 0.2f)
         {
             SetHealthBarColor(Color.red);
