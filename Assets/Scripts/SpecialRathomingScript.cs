@@ -118,7 +118,7 @@ public class SpecialRathomingScript : MonoBehaviour
 
                 //Debug.Log("Summon the Diet");
                 if (attackComplete == true){
-                    //Debug.Log("VIRILITER AGITE!");
+                  
                     //AOE
                     Instantiate(shockwave, transform.position, transform.rotation);
                     //Debug.Log("HELP ME");
@@ -157,6 +157,10 @@ public class SpecialRathomingScript : MonoBehaviour
                 }
             }
         }
+
+        AttackAnimComplete();
+
+
         IEnumerator waiter()
         {
             C2Running = true;
@@ -173,7 +177,7 @@ public class SpecialRathomingScript : MonoBehaviour
         {
             C1Running = true;
             attackComplete = false;
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(1.17F);
             attackComplete = true;
             yield return new WaitForSeconds(3);
             Debug.Log("atkComplete TRUE");

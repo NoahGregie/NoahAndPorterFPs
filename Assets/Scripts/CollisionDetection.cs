@@ -9,6 +9,7 @@ public class CollisionDetection : MonoBehaviour
     public EnemyHealth eh;
     public ratOgreHealth rh;
     public int sworddamage;
+    
     // private void OnTriggerEnter(Collider other)
     //  {
 
@@ -26,7 +27,8 @@ public class CollisionDetection : MonoBehaviour
     
     private void OnTriggerEnter(Collider other)
     {
-
+        sworddamage = -50;
+        //Debug.Log("Code ACTIVATED");
         if (other.gameObject.tag == "Enemy")
         {
 
@@ -39,9 +41,12 @@ public class CollisionDetection : MonoBehaviour
         }
         if (other.gameObject.tag == "BigEnemy")
         {
-
+            Debug.Log("Code ACTIVATED");
+            Debug.Log("WeaponNum = " + sworddamage);
+            //Debug.Log("Sword Damage IST: " sworddamage);
             rh = other.gameObject.GetComponent<ratOgreHealth>();
             rh.AddjustCurrentHealth(sworddamage);
+            
 
         }
 
