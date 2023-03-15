@@ -137,60 +137,94 @@ public class SpecialRathomingScript : MonoBehaviour
 
         //cooldown method
        
-        //check for player to kill
-        void checkForPlayer()
+        //chek for player to kill
+        
+    }
+
+
+
+
+
+
+    void checkForPlayer()
+    {
+        Debug.Log("Player check called");
+        Collider[] colliders = Physics.OverlapSphere(transform.position, 2f);
+        foreach (Collider c in colliders)
         {
-            Debug.Log("Player check called");
-            Collider[] colliders = Physics.OverlapSphere(transform.position, 2f);
-            foreach(Collider c in colliders)
+            //if(distance <= 50){
+            if (ph != null)
             {
-                //if(distance <= 50){
-                if(ph != null){
-                    //if(pause != true)
-                    //c.GetComponent<Player>().TakeDamage(20);
-                    //Debug.Log("Nan ihir Gelair Mordor");
-                    ph.TakeDamage(10);
-                    //Debug.Log("ph.TakeDamage Called!");
-                    //StartCoroutine(waiter());
+                //if(pause != true)
+                //c.GetComponent<Player>().TakeDamage(20);
+                //Debug.Log("Nan ihir Gelair Mordor");
+                ph.TakeDamage(10);
+                //Debug.Log("ph.TakeDamage Called!");
+                //StartCoroutine(waiter());
 
 
-                }
             }
         }
-
-        //AttackAnimComplete();
-
-
-        IEnumerator waiter()
-        {
-            C2Running = true;
-            //Debug.Log("Gloria Fortis Miles");
-            pause = true;
-            yield return new WaitForSeconds(1.84f);
-            pause = false;
-            Debug.Log("Reloaded");
-            C2Running = false;
-            //Debug.Log("Chancellor of the Exchequer!");
-
-        }
-        IEnumerator attackWait()
-        {
-            C1Running = true;
-            attackComplete = false;
-            yield return new WaitForSeconds(1.17F);
-            attackComplete = true;
-            yield return new WaitForSeconds(3);
-            Debug.Log("atkComplete TRUE");
-            C1Running = false;
-        }
     }
+
+
+
+
+    IEnumerator waiter()
+    {
+        C2Running = true;
+        //Debug.Log("Gloria Fortis Miles");
+        pause = true;
+        yield return new WaitForSeconds(1.84f);
+        pause = false;
+        Debug.Log("Reloaded");
+        C2Running = false;
+        //Debug.Log("Chancellor of the Exchequer!");
+
+    }
+    IEnumerator attackWait()
+    {
+        C1Running = true;
+        attackComplete = false;
+        yield return new WaitForSeconds(1.17F);
+        attackComplete = true;
+        yield return new WaitForSeconds(3);
+        Debug.Log("atkComplete TRUE");
+        C1Running = false;
+    }
+
+
+
+
+
+
+
+
+
 
     public void isDead()
     {
         moveSpeed = 0;
     }
 
+    public void AttackAnimComplete()
+    {
 
+
+        Debug.Log("HELLO WORLD");
+        Debug.Log("ATTACKANIMCOMPLETE");
+        Debug.Log("WELCOME TO ESTALIA GENTLEMEN!!!");
+        //print("DoesThisWork???");
+        //float excuse = 1;
+        //excuse = 99;
+
+
+        //AOE CODE
+        Instantiate(shockwave, transform.position, transform.rotation);
+        //Debug.Log("HELP ME");
+        checkForPlayer();
+        if (!C2Running) { StartCoroutine(waiter()); }
+    }
 
 
 
