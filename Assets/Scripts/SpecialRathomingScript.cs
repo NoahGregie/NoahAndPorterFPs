@@ -116,15 +116,13 @@ public class SpecialRathomingScript : MonoBehaviour
                 if (!C1Running){ StartCoroutine(attackWait()); }
 
 
-                //Debug.Log("Summon the Diet");
-                if (attackComplete == true){
+                //if (attackComplete == true){
                   
                     //AOE
-                    Instantiate(shockwave, transform.position, transform.rotation);
-                    //Debug.Log("HELP ME");
-                    checkForPlayer();
-                    if (!C2Running) { StartCoroutine(waiter()); }
-                }
+                  //  Instantiate(shockwave, transform.position, transform.rotation);
+                   // checkForPlayer();
+                  //  if (!C2Running) { StartCoroutine(waiter()); }
+               // }
                 if(attackComplete == false) { Debug.Log("Time Skips"); }
             }
   
@@ -148,8 +146,8 @@ public class SpecialRathomingScript : MonoBehaviour
 
     void checkForPlayer()
     {
-        Debug.Log("Player check called");
-        Collider[] colliders = Physics.OverlapSphere(transform.position, 2f);
+        //Debug.Log("Player check called");
+        Collider[] colliders = Physics.OverlapSphere(transform.position, 4f);
         foreach (Collider c in colliders)
         {
             //if(distance <= 50){
@@ -173,13 +171,11 @@ public class SpecialRathomingScript : MonoBehaviour
     IEnumerator waiter()
     {
         C2Running = true;
-        //Debug.Log("Gloria Fortis Miles");
         pause = true;
         yield return new WaitForSeconds(1.84f);
         pause = false;
         Debug.Log("Reloaded");
         C2Running = false;
-        //Debug.Log("Chancellor of the Exchequer!");
 
     }
     IEnumerator attackWait()
@@ -209,24 +205,22 @@ public class SpecialRathomingScript : MonoBehaviour
 
     public void AttackAnimComplete()
     {
-
-
-        Debug.Log("HELLO WORLD");
-        Debug.Log("ATTACKANIMCOMPLETE");
-        Debug.Log("WELCOME TO ESTALIA GENTLEMEN!!!");
-        //print("DoesThisWork???");
-        //float excuse = 1;
-        //excuse = 99;
-
-
+        
         //AOE CODE
         Instantiate(shockwave, transform.position, transform.rotation);
-        //Debug.Log("HELP ME");
         checkForPlayer();
         if (!C2Running) { StartCoroutine(waiter()); }
+        //animator.SetBool("PlayAttack", false);
+
+
     }
 
 
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawWireSphere(transform.position, 2f);
+    }
 
 }
 
