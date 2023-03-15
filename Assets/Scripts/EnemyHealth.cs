@@ -20,15 +20,7 @@ public class EnemyHealth : MonoBehaviour
     public GameObject player;
 
     public GameObject hurt;
-    void Start()
-    {
-
-      
-        
-
-       
-
-    }
+  
     void Update()
     {
 
@@ -81,9 +73,12 @@ public class EnemyHealth : MonoBehaviour
             Instantiate(Blood,blood, Quaternion.identity);
           ph=  player.GetComponent<PlayerHealth>();
             ph.ResoreHealth(1);
+         
             Destroy(gameObject);
 
         }
+
+
 
     }
 

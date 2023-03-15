@@ -42,7 +42,7 @@ public class EnemyHomingScript : MonoBehaviour
     {
         rig = GetComponent<Rigidbody>();
        // pm = GetComponent<movemen>();
-        player = GameObject.Find("Player").transform;
+        player = GameObject.Find("playerOBJ").transform;
         animator = gameObject.GetComponent<Animator>();
         // animator.SetBool("PlayRun", false);
     
@@ -53,7 +53,7 @@ public class EnemyHomingScript : MonoBehaviour
     // e per frame
 
    
-
+    
     
   public  void Update()
     {

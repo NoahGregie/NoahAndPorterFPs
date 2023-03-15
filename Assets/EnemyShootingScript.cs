@@ -48,7 +48,7 @@ public class EnemyShootingScript : MonoBehaviour
     {
         rig = GetComponent<Rigidbody>();
         pm = GetComponent<movemen>();
-        player = GameObject.Find("Player").transform;
+        player = GameObject.Find("playerOBJ").transform;
         animator = gameObject.GetComponent<Animator>();
         // animator.SetBool("PlayRun", false);
 
