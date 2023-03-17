@@ -147,21 +147,25 @@ public class SpecialRathomingScript : MonoBehaviour
     void checkForPlayer()
     {
         //Debug.Log("Player check called");
-        Collider[] colliders = Physics.OverlapSphere(transform.position, 4f);
+        Collider[] colliders = Physics.OverlapSphere(transform.position, 7f);
         foreach (Collider c in colliders)
         {
-            //if(distance <= 50){
+            if(c.CompareTag("Player"))
+            {
+
+            Debug.Log(colliders);
+            Debug.Log("Colliders Checked");
             if (ph != null)
             {
                 //if(pause != true)
                 //c.GetComponent<Player>().TakeDamage(20);
-                //Debug.Log("Nan ihir Gelair Mordor");
-                ph.TakeDamage(10);
+                ph.TakeDamage(50);
                 //Debug.Log("ph.TakeDamage Called!");
                 //StartCoroutine(waiter());
 
 
             }
+        }
         }
     }
 
@@ -217,10 +221,10 @@ public class SpecialRathomingScript : MonoBehaviour
 
 
 
-    private void OnDrawGizmos()
-    {
-        Gizmos.DrawWireSphere(transform.position, 2f);
-    }
+    //private void OnDrawGizmos()
+    //{
+    //      Gizmos.DrawWireSphere(transform.position, 7f);
+    //}
 
 }
 
