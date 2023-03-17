@@ -117,12 +117,12 @@ public class movemen : MonoBehaviour
             {
 
                 timeRemaining -= Time.deltaTime;
-                Debug.Log(timeRemaining);
+               // Debug.Log(timeRemaining);
 
             }
             else
             {
-                Debug.Log("Timerdone");
+               // Debug.Log("Timerdone");
                 TimerIsRunning = false;
             }
 

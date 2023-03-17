@@ -8,35 +8,36 @@ public class conedetectin : MonoBehaviour
     public bool active = false;
 
 
-   
 
 
+    public LayerMask worldLayer;
 
 
-   private void Start()
+    private void Start()
     {
         rb = rb.GetComponent<Rigidbody>();
       
        
     }
 
-    // Update is called once per frame
+    public void FixedUpdate()
+    {
+        RaycastHit hit;
 
-
-    //  private void OnCollisionEnter(Collision collision)
-    //  {
-    //      if (collision.collider.name == "Player")
-    //   {
-    //        Debug.Log(collision.collider.name);
-
-    //  }
-    // }
+        if (Physics.Raycast(transform.position, transform.parent.forward, out hit, 1000.0f, worldLayer))
+           
+        active = true;
 
 
 
+        else
+        {
 
+            active = false;
+        }
+    }
 
- public void OnTriggerEnter(Collider other)
+    public void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player")
         {

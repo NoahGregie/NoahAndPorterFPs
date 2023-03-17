@@ -94,7 +94,7 @@ public class PlayerHealth : MonoBehaviour
     }
     public void TakeDamage(float damage)
     {
-        Debug.Log("Warcrimes");
+       // Debug.Log("Warcrimes");
         health -= damage;
         lerpTimer = 0f;
         durationTimer = 0;
@@ -132,7 +132,7 @@ public class PlayerHealth : MonoBehaviour
 
     public void expolion()
     {
-        Debug.Log("expolison");
+        //Debug.Log("expolison");
         Collider[] colliders = Physics.OverlapSphere(transform.position, radius);
 
         foreach (Collider nearbyObject in colliders)
@@ -145,7 +145,7 @@ public class PlayerHealth : MonoBehaviour
             {
                 //TakeDamage(10);
                // eg.dealdamage = false;
-                Debug.Log("dealdamage");
+               // Debug.Log("dealdamage");
             }
         }
 
