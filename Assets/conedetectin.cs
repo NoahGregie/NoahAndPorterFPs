@@ -24,16 +24,20 @@ public class conedetectin : MonoBehaviour
     {
         RaycastHit hit;
 
-        if (Physics.Raycast(transform.position, transform.parent.forward, out hit, 1000.0f, worldLayer))
+        if (Physics.Raycast(transform.position, transform.parent.forward, out hit, 100.0f, worldLayer))
+        {
+            active = true;
+            Debug.Log(active);
+        }
            
-        active = true;
-
+     
 
 
         else
         {
 
             active = false;
+            Debug.Log(active);
         }
     }
 
