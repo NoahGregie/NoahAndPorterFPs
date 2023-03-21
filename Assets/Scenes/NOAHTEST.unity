@@ -575,6 +575,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GernadeRat
       objectReference: {fileID: 0}
+    - target: {fileID: 8080413995863555508, guid: 879af12009ec51f4db3ec67de60a2b6c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8892556592872613646, guid: 879af12009ec51f4db3ec67de60a2b6c, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -2883,6 +2887,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ShottingTrapRat
       objectReference: {fileID: 0}
+    - target: {fileID: 879235086080715310, guid: 2f01ebf8926e81843a4b31ed944f9ac3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f01ebf8926e81843a4b31ed944f9ac3, type: 3}
 --- !u!1 &1328549841
@@ -3382,6 +3390,10 @@ PrefabInstance:
     - target: {fileID: 3756498935782530137, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: m_Name
       value: SpecialRat
+      objectReference: {fileID: 0}
+    - target: {fileID: 3756498935782530137, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4098462787687052242, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: m_Mesh
@@ -4562,7 +4574,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1805175143}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c7249dde0b9058649a23858931bd65c6, type: 3}
   m_Name: 
@@ -5023,6 +5035,10 @@ PrefabInstance:
     - target: {fileID: 8536584906942200072, guid: 3f17fbb32624c504ca289e85f62a55e1, type: 3}
       propertyPath: m_Name
       value: SPECIALSHOOTINGRAT 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8536584906942200072, guid: 3f17fbb32624c504ca289e85f62a55e1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8843208675975465201, guid: 3f17fbb32624c504ca289e85f62a55e1, type: 3}
       propertyPath: hurt
