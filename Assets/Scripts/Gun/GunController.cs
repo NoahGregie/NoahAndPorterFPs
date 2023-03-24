@@ -54,7 +54,7 @@ public class GunController : MonoBehaviour
    public PlayerCam pc;
     public LayerMask worldLayer;
     int layerMask = 1 << 7;
-
+    
 
     public TMP_Text text;
     private void Start()
@@ -69,7 +69,7 @@ public class GunController : MonoBehaviour
 
         DetermineAim();
         text.SetText(currentAmmonInClip + "/" + clipSize);
-
+        text.color = Color.magenta;
 
    //  DetermineRotation();
 
