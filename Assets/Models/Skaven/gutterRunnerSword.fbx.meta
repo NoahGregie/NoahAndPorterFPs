@@ -3,7 +3,12 @@ guid: 0a0ab89800420ad4c9b446ffe30ffa1b
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: skv_gutter_runners_sword_1h_01_0
+    second: {fileID: 2100000, guid: 331a55767741d9f449c4d044965aa6fc, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

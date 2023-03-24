@@ -159,7 +159,7 @@ public class SpecialRathomingScript : MonoBehaviour
             {
                 //if(pause != true)
                 //c.GetComponent<Player>().TakeDamage(20);
-                ph.TakeDamage(50);
+                ph.TakeDamage(350);
                 //Debug.Log("ph.TakeDamage Called!");
                 //StartCoroutine(waiter());
 
