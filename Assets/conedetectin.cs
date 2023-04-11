@@ -27,7 +27,7 @@ public class conedetectin : MonoBehaviour
         if (Physics.Raycast(transform.position, transform.parent.forward, out hit, 100.0f, worldLayer))
         {
             active = true;
-            Debug.Log(active);
+            //Debug.Log(active);
         }
            
      
@@ -37,7 +37,7 @@ public class conedetectin : MonoBehaviour
         {
 
             active = false;
-            Debug.Log(active);
+          //  Debug.Log(active);
         }
     }
 

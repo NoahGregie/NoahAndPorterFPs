@@ -1276,12 +1276,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 492133655}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 52f9273ffc205464fbba77990ecb2c65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ok: 0
+  enemies: []
 --- !u!1 &507672556
 GameObject:
   m_ObjectHideFlags: 0
@@ -5100,7 +5101,7 @@ MonoBehaviour:
     fastMode: 0
     keepAlpha: 0
   fog:
-    enabled: 1
+    enabled: 0
     excludeSkybox: 1
   debugLayer:
     lightMeter:
@@ -5163,7 +5164,7 @@ Camera:
     height: 1
   near clip plane: 0.01
   far clip plane: 1e+10
-  field of view: 91.7
+  field of view: 89.3
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -5213,7 +5214,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2052894054}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c7249dde0b9058649a23858931bd65c6, type: 3}
   m_Name: 
@@ -5591,7 +5592,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8536584906942200072, guid: 3f17fbb32624c504ca289e85f62a55e1, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8843208675975465201, guid: 3f17fbb32624c504ca289e85f62a55e1, type: 3}
       propertyPath: hurt

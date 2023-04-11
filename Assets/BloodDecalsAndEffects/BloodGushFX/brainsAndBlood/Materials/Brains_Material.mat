@@ -2,14 +2,20 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!21 &2100000
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: Brains_Material
   m_Shader: {fileID: 45, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: _EMISSION _NORMALMAP _PARALLAXMAP _SPECGLOSSMAP
-  m_LightmapFlags: 1
+  m_ValidKeywords:
+  - _EMISSION
+  - _NORMALMAP
+  - _PARALLAXMAP
+  - _SPECGLOSSMAP
+  m_InvalidKeywords: []
+  m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -146,6 +152,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AO_boost: 1
     - _Base_Gloss: 0.5555561
@@ -175,7 +182,7 @@ Material:
     - _Norm1Strength: 1
     - _Norm2Strength: 1
     - _Norm3Strength: 1
-    - _OcclusionStrength: 1
+    - _OcclusionStrength: 0
     - _Parallax: 0.005
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
@@ -206,7 +213,7 @@ Material:
     - _DetailSpecCol3: {r: 0, g: 0, b: 1, a: 1}
     - _Dirt_Color: {r: 1, g: 1, b: 1, a: 1}
     - _Dirt_SpecCol: {r: 0.128, g: 0.134, b: 0.147, a: 1}
-    - _EmissionColor: {r: 0.19117647, g: 0.16868512, b: 0.16868512, a: 0.48}
+    - _EmissionColor: {r: 1, g: 0.021099018, b: 0, a: 0.48}
     - _EmissionColorUI: {r: 1, g: 1, b: 1, a: 1}
     - _Mask1_color: {r: 1, g: 1, b: 1, a: 1}
     - _Mask2_color: {r: 0.05082181, g: 0.6911765, b: 0.1082329, a: 1}
@@ -217,3 +224,4 @@ Material:
     - _TopEmissionColor: {r: 0, g: 0, b: 0, a: 0}
     - _TopEmissionColorUI: {r: 1, g: 1, b: 1, a: 1}
     - _TopSpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
+  m_BuildTextureStacks: []

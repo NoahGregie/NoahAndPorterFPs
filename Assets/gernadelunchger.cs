@@ -30,6 +30,7 @@ public class gernadelunchger : MonoBehaviour
             currentammo--;
             ThrowGernade();
             text.SetText("Gernades " + currentammo);
+            text.color = Color.magenta;
         }
 
 
