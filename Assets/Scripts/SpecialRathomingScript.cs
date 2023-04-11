@@ -86,7 +86,6 @@ public class SpecialRathomingScript : MonoBehaviour
  
             animator.SetBool("PlaySpecialRun", true);
             transform.LookAt(target);
-            //Debug.Log("movovmoemvoe");
             rig.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
 
 
@@ -131,11 +130,8 @@ public class SpecialRathomingScript : MonoBehaviour
             animator.SetBool("PlayAttack", false);
         }
 
-     
-
-        //cooldown method
-       
-        //chek for player to kill
+         
+        //czech for player to kill
         
     }
 

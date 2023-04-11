@@ -50,12 +50,19 @@ public class gerndae : MonoBehaviour
 
             Rigidbody rb = nearbyObject.GetComponent<Rigidbody>();
             EnemyHealth eh = nearbyObject.GetComponent<EnemyHealth>();
+            ratOgreHealth rh = nearbyObject.GetComponent<ratOgreHealth>();
           
             if(rb!= null &&eh!= null)
             {
                 rb.AddExplosionForce(force, transform.position, radius);
                 eh.AddjustCurrentHealth(-1);
 
+            }
+
+            if(rb!= null &&rh!= null)
+            {
+                rb.AddExplosionForce(force, transform.position, radius);
+                rh.AddjustCurrentHealth(-250);
             }
 
 
