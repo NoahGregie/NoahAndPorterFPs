@@ -429,7 +429,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -831,7 +831,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -1158,7 +1158,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -1285,7 +1285,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -1412,7 +1412,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -1847,7 +1847,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -2123,7 +2123,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -2250,7 +2250,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -2377,7 +2377,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -2504,7 +2504,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -2700,7 +2700,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -2827,7 +2827,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -3279,7 +3279,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -3411,7 +3411,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -3538,7 +3538,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -3665,7 +3665,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -3856,7 +3856,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -3983,7 +3983,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -4364,6 +4364,10 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 1966428734}
+    - target: {fileID: 3716902059403570612, guid: 5ffb1cfc79ca39e4794377b6d34d0b55, type: 3}
+      propertyPath: moveSpeed
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 3716902059403570612, guid: 5ffb1cfc79ca39e4794377b6d34d0b55, type: 3}
       propertyPath: shockwave
       value: 
@@ -5396,6 +5400,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1966428734}
     - target: {fileID: 3716902059403570612, guid: 5ffb1cfc79ca39e4794377b6d34d0b55, type: 3}
+      propertyPath: moveSpeed
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 3716902059403570612, guid: 5ffb1cfc79ca39e4794377b6d34d0b55, type: 3}
       propertyPath: shockwave
       value: 
       objectReference: {fileID: 2146296072}
@@ -6140,7 +6148,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -6267,7 +6275,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -6463,7 +6471,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -6590,7 +6598,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -6717,7 +6725,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -6844,7 +6852,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -7225,6 +7233,10 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 1966428734}
+    - target: {fileID: 3716902059403570612, guid: 5ffb1cfc79ca39e4794377b6d34d0b55, type: 3}
+      propertyPath: moveSpeed
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 3716902059403570612, guid: 5ffb1cfc79ca39e4794377b6d34d0b55, type: 3}
       propertyPath: shockwave
       value: 
@@ -8103,7 +8115,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -8255,7 +8267,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -8451,7 +8463,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -8578,7 +8590,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -8705,7 +8717,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -8901,7 +8913,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -9097,7 +9109,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -9362,7 +9374,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -9489,7 +9501,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -9754,7 +9766,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -9897,7 +9909,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -10124,7 +10136,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -10330,7 +10342,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -10526,7 +10538,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -10653,7 +10665,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -10997,7 +11009,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -11274,7 +11286,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -11401,7 +11413,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -11784,7 +11796,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -12418,7 +12430,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -12545,7 +12557,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -12810,7 +12822,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -12992,7 +13004,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -13603,7 +13615,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -13730,7 +13742,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -13857,7 +13869,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -13984,7 +13996,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -14180,7 +14192,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -14524,7 +14536,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -14843,7 +14855,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -15120,7 +15132,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -15247,7 +15259,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -15637,7 +15649,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -16003,7 +16015,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -16284,7 +16296,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -16411,7 +16423,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -16538,7 +16550,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -16734,7 +16746,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -16861,7 +16873,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -17057,7 +17069,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -17253,7 +17265,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -17426,7 +17438,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -17654,7 +17666,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -17957,7 +17969,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -18084,7 +18096,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -18280,7 +18292,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -18602,7 +18614,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -18936,7 +18948,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -19298,7 +19310,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -19715,7 +19727,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -20046,7 +20058,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -20173,7 +20185,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -20655,7 +20667,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -20782,7 +20794,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -20909,7 +20921,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -21685,7 +21697,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -21812,7 +21824,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -22188,7 +22200,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -22618,7 +22630,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -22745,7 +22757,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -22872,7 +22884,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -23516,7 +23528,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -23850,7 +23862,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -24184,7 +24196,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -24908,7 +24920,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -25035,7 +25047,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -25997,7 +26009,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -26124,7 +26136,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -26251,7 +26263,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -26656,7 +26668,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -26883,7 +26895,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -27010,7 +27022,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -27282,7 +27294,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -27409,7 +27421,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -27605,7 +27617,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -27822,7 +27834,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   walkSpeed: 5
-  sprintSpeed: 10
+  sprintSpeed: 6
   slideSpeed: 15
   groundDrag: 7
   jumpForce: 10
@@ -27964,7 +27976,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -28229,7 +28241,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -28356,7 +28368,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -28976,7 +28988,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -29172,7 +29184,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -29299,7 +29311,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -29626,7 +29638,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -29822,7 +29834,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -30129,7 +30141,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
@@ -30256,7 +30268,7 @@ PrefabInstance:
       objectReference: {fileID: 1966428734}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4098462788081377759, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: playercode
