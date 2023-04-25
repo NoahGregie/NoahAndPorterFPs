@@ -34,7 +34,7 @@ public class enemySpawner2 : MonoBehaviour
             // get the terrain height at the random position
             float posy = Terrain.activeTerrain.SampleHeight(new Vector3(posx, 0, posz));
             // create new gameObject on random position
-            GameObject newObject = (GameObject)Instantiate(objectToPlace, new Vector3(posx, posy, posz), Quaternion.identity);
+            GameObject newObject = (GameObject)Instantiate(objectToPlace, new Vector3(posx, posy, posz), Quaternion.identity, transform);
             currentObjects += 1;
         }
         if (currentObjects == numberOfObjects)

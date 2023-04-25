@@ -3,11 +3,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
 
-    private float health;
+    public float health;
     private float lerpTimer;
     [Header("Health Bar")]
     public float maxHealth = 100;
@@ -35,6 +36,13 @@ public class PlayerHealth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+       
+        if(health == 0)
+        {
+
+            Scene scene = SceneManager.GetActiveScene(); SceneManager.LoadScene(scene.name);
+
+        }
        // expolion();
         health = Mathf.Clamp(health, 0, maxHealth);
         UpdateHealthUI();
@@ -54,6 +62,7 @@ public class PlayerHealth : MonoBehaviour
         }
 
         timer = false;
+      
     }
 
     IEnumerator HealHealth()
@@ -166,6 +175,7 @@ public class PlayerHealth : MonoBehaviour
 
         // yield return new WaitForSeconds(time);
     }
+
 
    
 
