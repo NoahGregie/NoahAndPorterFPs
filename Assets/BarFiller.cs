@@ -14,6 +14,8 @@ public class BarFiller : MonoBehaviour
     void Start()
     {
         FillCode.SetHealthBarValue(1);
+        SprintCode.SetHealthBarValue(1);
+
        
     }
 
@@ -22,11 +24,19 @@ public class BarFiller : MonoBehaviour
     {
         ChangeCrouch();
 
-
+        ChangeSprint();
 
     }
 
 
+    public void ChangeSprint()
+    {
+
+        pm = player.GetComponent<movemen>();
+       
+
+
+    }
     public void ChangeCrouch()
     {
         pm = player.GetComponent<movemen>();

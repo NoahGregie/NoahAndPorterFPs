@@ -36,11 +36,15 @@ public class EnemyHomingScript : MonoBehaviour
 
     public float force;
     public float force2;
-    
+
+
+
+    public AudioSource source;
 
     void Start()
     {
         rig = GetComponent<Rigidbody>();
+        source = GetComponent<AudioSource>();
        // pm = GetComponent<movemen>();
         player = GameObject.Find("playerOBJ").transform;
         animator = gameObject.GetComponent<Animator>();
@@ -71,8 +75,8 @@ public class EnemyHomingScript : MonoBehaviour
 
         if (cd.active == true &&pm.crouch ==false )
         {
-           
 
+            source.Play();
             rig.isKinematic = false;
             Vector3 pos = Vector3.MoveTowards(transform.position, target.position, speed * Time.fixedDeltaTime);
             moveDirection = orientation.forward;

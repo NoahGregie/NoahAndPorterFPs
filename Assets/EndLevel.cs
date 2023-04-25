@@ -8,11 +8,7 @@ public class EndLevel : MonoBehaviour
 
     public bool ok = false;
     public GameObject[] enemies;
-    public void Start()
-    {
-        spwanRandom();
-        
-    }
+  
 
     public void Update()
     {
@@ -42,11 +38,5 @@ public class EndLevel : MonoBehaviour
         SceneManager.LoadScene(sceneBuildIndex:1);
     }
 
-    public void spwanRandom()
-    {
-
-        Instantiate(enemies[Random.Range(0, enemies.Length - 1)]);
-
-
-    }
+   
 }
