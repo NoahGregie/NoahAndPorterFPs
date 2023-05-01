@@ -9,7 +9,9 @@ public class CollisionDetection : MonoBehaviour
     public EnemyHealth eh;
     public ratOgreHealth rh;
     public int sworddamage;
-    
+    public bool fight;
+
+
     // private void OnTriggerEnter(Collider other)
     //  {
 
@@ -29,7 +31,7 @@ public class CollisionDetection : MonoBehaviour
     {
         sworddamage = -50;
         //Debug.Log("Code ACTIVATED");
-        if (other.gameObject.tag == "Enemy")
+        if (other.gameObject.tag == "Enemy" && fight == true)
         {
 
             print("SwordHit");
@@ -39,7 +41,7 @@ public class CollisionDetection : MonoBehaviour
 
 
         }
-        if (other.gameObject.tag == "BigEnemy")
+        if (other.gameObject.tag == "BigEnemy" && fight == true)
         {
             Debug.Log("Code ACTIVATED");
             Debug.Log("WeaponNum = " + sworddamage);
@@ -49,16 +51,26 @@ public class CollisionDetection : MonoBehaviour
             
 
         }
-
-
-
+       // if (Animator.GetCurrentAnimatorStateInfo(0).IsName("swordSlash"))
+        //{
+          //  print("morkite");
+        //}
+        
+        
 
 
     }
 
+    public void SwordSlash()
+    {
+        fight = true;
+    }
+    public void SlashComplete() 
+    {
+        fight = false;
+    }
 
 
-
-
+    //sword2hzweihander (1) 1
 
 }
