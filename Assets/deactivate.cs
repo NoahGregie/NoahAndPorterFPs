@@ -10,10 +10,14 @@ public class deactivate : MonoBehaviour
     Teleport tp;
     public GameObject t;
 
+
+   // Teleport tb;
+    //public GameObject b;
+
     public void Update()
     {
-        
 
+      //  tb = b.GetComponent<Teleport>();
         tp = t.GetComponent<Teleport>();
  
         if (tp.isOn == true)
@@ -22,6 +26,11 @@ public class deactivate : MonoBehaviour
             die();
             
         }
+       // if(tb.isOn == true)
+      //  {
+
+      //      die2();
+      //  }
 
 
     }
@@ -39,7 +48,14 @@ public class deactivate : MonoBehaviour
 
     }
 
+   // public void die2()
+   // {
 
+
+    //    gameObject.SetActive(false);
+    //    tp.isOn = false;
+
+  //  }
 
 
 

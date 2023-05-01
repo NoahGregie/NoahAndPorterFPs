@@ -10,22 +10,11 @@ public class teleportBack : MonoBehaviour
     public bool isOn = false;
     public string levelUnload;
     // Start is called before the first frame update
-
+    public string blank;
 
     // Update is called once per frame
 
-    public void Update()
-    {
-
-        if (isOn == true)
-        {
-
-            SceneManager.UnloadSceneAsync(levelUnload);
-
-        }
-
-
-    }
+    
 
     public void OnMouseDown()
     {
@@ -38,22 +27,31 @@ public class teleportBack : MonoBehaviour
 
 
         LoadSceneOnTop();
-
+        GameMaster.active = true;
         isOn = true;
-
+        loadd();
 
 
 
         //Destroy(gameObject);
 
     }
-
+   
     public static void LoadSceneOnTop()
     {
+
         //reactivate level 2
         GameMaster.active = true;
 
 
+
+    }
+    public void loadd()
+    {
+
+
+
+        SceneManager.UnloadSceneAsync(levelUnload);
 
     }
  

@@ -26,24 +26,36 @@ public class PlayerHealth : MonoBehaviour
   
 
     private float durationTimer;
+
+   public string scenea;
+    public string level2;
     // Start is called before the first frame update
     void Start()
     {
         health = maxHealth;
         overlay.color = new Color(overlay.color.r, overlay.color.g, overlay.color.b, 0);
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-       
-        if(health == 0)
-        {
+        
 
-            Scene scene = SceneManager.GetActiveScene(); SceneManager.LoadScene(scene.name);
+        if (health == 0)
+        {
+            
+            //reload scene while not get ridding of level 2.
+
+          //  Scene scene = SceneManager.GetActiveScene(); SceneManager.LoadScene(scene.name);
+
+             SceneManager.LoadScene(scenea);
+            SceneManager.LoadScene(level2, LoadSceneMode.Additive);
+
+
 
         }
-       // expolion();
+        // expolion();
         health = Mathf.Clamp(health, 0, maxHealth);
         UpdateHealthUI();
         if (overlay.color.a > 0)

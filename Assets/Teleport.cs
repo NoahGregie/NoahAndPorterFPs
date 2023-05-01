@@ -29,9 +29,9 @@ public class Teleport : MonoBehaviour
         isOn = true;
         SceneManager.LoadScene(level, LoadSceneMode.Additive);
 
-        
+        transform.position = new Vector3(1000, 100000, 500);
 
-        Destroy(gameObject);
+        // Destroy(gameObject);
 
     }
 

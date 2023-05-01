@@ -14,10 +14,13 @@ public class GameMaster : MonoBehaviour
         DontDestroyOnLoad(this);
     }
 
+    public void Update()
+    {
+        Debug.Log(active);
+    }
 
 
 
-   
     //when ative then reactiveate parent 
     //reactivate when loading in new scence
 

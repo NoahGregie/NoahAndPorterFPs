@@ -7460,7 +7460,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   game: {fileID: 0}
   isOn: 0
-  levelUnload: Boss3
+  levelUnload: Bossthree
+  blank: 
 --- !u!1 &907942776
 GameObject:
   m_ObjectHideFlags: 0
@@ -12281,6 +12282,8 @@ MonoBehaviour:
   fadeSpeed: 1.5
   timer: 1
   radius: 0
+  scenea: Bossthree
+  level2: Blank
 --- !u!4 &1555184188
 Transform:
   m_ObjectHideFlags: 0

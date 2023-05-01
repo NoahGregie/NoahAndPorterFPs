@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class reactivate : MonoBehaviour
 {
-
+    private void Awake()
+    {
+        DontDestroyOnLoad(gameObject);
+    }
     public void Update()
     {
         if(GameMaster.active== true)
