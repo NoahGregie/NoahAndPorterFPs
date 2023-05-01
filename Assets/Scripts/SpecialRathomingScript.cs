@@ -110,6 +110,7 @@ public class SpecialRathomingScript : MonoBehaviour
         if (distance <= 8) {
             if (pause == false)
             {
+                Debug.Log("Rak-ogri Target in range!!!");
                 animator.SetBool("PlayAttack", true);
                 moveSpeed = 0;
                 if (!C1Running){ StartCoroutine(attackWait()); }
