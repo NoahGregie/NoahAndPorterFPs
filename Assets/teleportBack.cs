@@ -28,6 +28,7 @@ public class teleportBack : MonoBehaviour
 
         LoadSceneOnTop();
         GameMaster.active = true;
+        GameMaster.differentScenes = false;
         isOn = true;
         loadd();
 

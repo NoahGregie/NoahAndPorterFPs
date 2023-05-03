@@ -21,15 +21,13 @@ public class Teleport : MonoBehaviour
 
 
         //add in new scene
-
-       
-
-       
+        GameMaster.differentScenes = true;
 
         isOn = true;
         SceneManager.LoadScene(level, LoadSceneMode.Additive);
 
         transform.position = new Vector3(1000, 100000, 500);
+
 
         // Destroy(gameObject);
 

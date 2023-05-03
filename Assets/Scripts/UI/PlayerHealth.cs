@@ -44,14 +44,23 @@ public class PlayerHealth : MonoBehaviour
 
         if (health == 0)
         {
-            
+            if(GameMaster.differentScenes == false){
+
+                health = 500;
+                gameObject.transform.position = new Vector3(36, 2, 4);
+
+            }
+            if(GameMaster.differentScenes == true)
+            {
+                Debug.Log("number2");
+                SceneManager.LoadScene(scenea);
+                SceneManager.LoadScene(level2, LoadSceneMode.Additive);
+            }
             //reload scene while not get ridding of level 2.
 
           //  Scene scene = SceneManager.GetActiveScene(); SceneManager.LoadScene(scene.name);
 
-             SceneManager.LoadScene(scenea);
-            SceneManager.LoadScene(level2, LoadSceneMode.Additive);
-
+             
 
 
         }
