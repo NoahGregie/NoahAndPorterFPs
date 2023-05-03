@@ -7,9 +7,9 @@ public class EndLevel : MonoBehaviour
 {
 
     public bool ok = false;
-    public GameObject[] enemies;
-  
-
+     GameObject[] enemies;
+    private bool hasRun = false;
+    public GameObject equation;
     public void Update()
     {
 
@@ -18,7 +18,7 @@ public class EndLevel : MonoBehaviour
         gameObjects = GameObject.FindGameObjectsWithTag("Enemy");
 
 
-        if(gameObjects.Length == 0)
+        if(gameObjects.Length == 0 && hasRun==false)
         {
             endLevel();
           
@@ -33,9 +33,10 @@ public class EndLevel : MonoBehaviour
     public void endLevel()
     {
 
-
-      
-        SceneManager.LoadScene(sceneBuildIndex:1);
+        Debug.Log("YOU WIN");
+        Instantiate(equation, new Vector3(45, 2, 98), Quaternion.identity);
+        GameMaster.formulas++;
+        hasRun = true;
     }
 
    
