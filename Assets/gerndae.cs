@@ -40,8 +40,11 @@ public class gerndae : MonoBehaviour
     {
 
         //get all nearby objects and then add force to objects
+        Debug.Log("U-569");
+        Instantiate(explosioneffect, transform.position, transform.rotation);
+        Debug.Log("U-94");
 
-        Instantiate(explosioneffect, transform.position, transform.rotation, transform);
+
 
        Collider[] colliders = Physics.OverlapSphere(transform.position, radius);
 
