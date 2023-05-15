@@ -33,7 +33,7 @@ public class EnemySpawner : MonoBehaviour
         {
 
             Instantiate(finalBoss, bar, Quaternion.identity, transform);
-
+            Destroy(gameObject);
         }
     }
 
