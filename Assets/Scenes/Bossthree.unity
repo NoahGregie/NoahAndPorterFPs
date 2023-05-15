@@ -1727,7 +1727,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &114407446
 Transform:
   m_ObjectHideFlags: 0
@@ -3500,6 +3500,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ok: 0
   equation: {fileID: 6344836761765323813, guid: 1cda0524d5727834981ca50ec5ac9428, type: 3}
+  key: {fileID: 903371021}
+  x: 45
+  y: 2
+  z: 98
+  x1: 38
+  y2: 2
+  z1: 98
 --- !u!4 &361634428
 Transform:
   m_ObjectHideFlags: 0
@@ -3695,7 +3702,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7064383627428583422, guid: 681aa90c05bd2ca4ab4fd59b32d12d72, type: 3}
       propertyPath: currentammo
-      value: 1
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 9095507873994036745, guid: 681aa90c05bd2ca4ab4fd59b32d12d72, type: 3}
       propertyPath: m_RootOrder
@@ -4899,7 +4906,7 @@ MonoBehaviour:
   zPos: 0
   yPos: 0
   enemyCount: 0
-  finalBoss: {fileID: 0}
+  finalBoss: {fileID: 1707297036}
   secondEnemyCount: 0
   MaxEnemyCount: 100
 --- !u!65 &528925624
@@ -5299,6 +5306,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ok: 0
   equation: {fileID: 0}
+  key: {fileID: 0}
+  x: 0
+  y: 0
+  z: 0
+  x1: 0
+  y2: 0
+  z1: 0
 --- !u!1 &570077259
 GameObject:
   m_ObjectHideFlags: 0
@@ -7694,7 +7708,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 903371021}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 45.49, y: 1.89, z: 140.09}
+  m_LocalPosition: {x: 45.49, y: 1.89, z: 485.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7906,7 +7920,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8536584906942200072, guid: 3f17fbb32624c504ca289e85f62a55e1, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8843208675975465201, guid: 3f17fbb32624c504ca289e85f62a55e1, type: 3}
       propertyPath: hurt
@@ -7970,7 +7984,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9021794253288793010, guid: 3f17fbb32624c504ca289e85f62a55e1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 427
+      value: 386.5
       objectReference: {fileID: 0}
     - target: {fileID: 9021794253288793010, guid: 3f17fbb32624c504ca289e85f62a55e1, type: 3}
       propertyPath: m_LocalRotation.w
@@ -10743,7 +10757,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1311274782
 Transform:
   m_ObjectHideFlags: 0
@@ -11592,7 +11606,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4563412421208195990, guid: 5ffb1cfc79ca39e4794377b6d34d0b55, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4563412421208195990, guid: 5ffb1cfc79ca39e4794377b6d34d0b55, type: 3}
       propertyPath: m_TagString
@@ -12806,7 +12820,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkSpeed: 5
   sprintSpeed: 6
-  slideSpeed: 20
+  slideSpeed: 25
   groundDrag: 7
   jumpForce: 5
   jumpCooldown: 0.001
@@ -14268,7 +14282,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1771764795
 Transform:
   m_ObjectHideFlags: 0
@@ -15690,7 +15704,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4569485995514463971, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 122.63
+      value: 13.7
       objectReference: {fileID: 0}
     - target: {fileID: 4569485995514463971, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: m_LocalPosition.y
@@ -15698,7 +15712,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4569485995514463971, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 467.3
+      value: 18.5
       objectReference: {fileID: 0}
     - target: {fileID: 4569485995514463971, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
       propertyPath: m_LocalRotation.w
@@ -16462,7 +16476,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2127833029
 Transform:
   m_ObjectHideFlags: 0

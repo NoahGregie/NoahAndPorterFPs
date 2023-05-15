@@ -1282,11 +1282,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 492133655}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 52f9273ffc205464fbba77990ecb2c65, type: 3}
+  m_Script: {fileID: 11500000, guid: 82120bfca74ea31438f3417111dc969a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ok: 0
-  equation: {fileID: 6344836761765323813, guid: 1cda0524d5727834981ca50ec5ac9428, type: 3}
+  level: Level Select
 --- !u!1 &507672556
 GameObject:
   m_ObjectHideFlags: 0

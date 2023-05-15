@@ -3237,6 +3237,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ok: 0
   equation: {fileID: 6344836761765323813, guid: 1cda0524d5727834981ca50ec5ac9428, type: 3}
+  key: {fileID: 903371021}
+  x: 45
+  y: 2
+  z: 98
+  x1: 38
+  y2: 2
+  z1: 98
 --- !u!4 &361634428
 Transform:
   m_ObjectHideFlags: 0
@@ -3432,7 +3439,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7064383627428583422, guid: 681aa90c05bd2ca4ab4fd59b32d12d72, type: 3}
       propertyPath: currentammo
-      value: 4
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 9095507873994036745, guid: 681aa90c05bd2ca4ab4fd59b32d12d72, type: 3}
       propertyPath: m_RootOrder
@@ -5036,6 +5043,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ok: 0
   equation: {fileID: 0}
+  key: {fileID: 0}
+  x: 0
+  y: 0
+  z: 0
+  x1: 0
+  y2: 0
+  z1: 0
 --- !u!1 &570077259
 GameObject:
   m_ObjectHideFlags: 0
@@ -7564,7 +7578,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 903371021}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 45.49, y: 1.89, z: 140.09}
+  m_LocalPosition: {x: 45.49, y: -1.6, z: 602}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
