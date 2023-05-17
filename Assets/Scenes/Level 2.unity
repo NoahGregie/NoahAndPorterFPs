@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.009012707, g: 0.013102867, b: 0.020503506, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -123,6 +123,68 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &317529
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 686982518}
+    m_Modifications:
+    - target: {fileID: 79150723916491242, guid: 4d5b333b9d4b87b4eb452addb6ef4021, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 79150723916491242, guid: 4d5b333b9d4b87b4eb452addb6ef4021, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.38099986
+      objectReference: {fileID: 0}
+    - target: {fileID: 79150723916491242, guid: 4d5b333b9d4b87b4eb452addb6ef4021, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.06000018
+      objectReference: {fileID: 0}
+    - target: {fileID: 79150723916491242, guid: 4d5b333b9d4b87b4eb452addb6ef4021, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.43299913
+      objectReference: {fileID: 0}
+    - target: {fileID: 79150723916491242, guid: 4d5b333b9d4b87b4eb452addb6ef4021, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.43252566
+      objectReference: {fileID: 0}
+    - target: {fileID: 79150723916491242, guid: 4d5b333b9d4b87b4eb452addb6ef4021, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.5608385
+      objectReference: {fileID: 0}
+    - target: {fileID: 79150723916491242, guid: 4d5b333b9d4b87b4eb452addb6ef4021, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5927821
+      objectReference: {fileID: 0}
+    - target: {fileID: 79150723916491242, guid: 4d5b333b9d4b87b4eb452addb6ef4021, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.38339427
+      objectReference: {fileID: 0}
+    - target: {fileID: 79150723916491242, guid: 4d5b333b9d4b87b4eb452addb6ef4021, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -70
+      objectReference: {fileID: 0}
+    - target: {fileID: 79150723916491242, guid: 4d5b333b9d4b87b4eb452addb6ef4021, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 166
+      objectReference: {fileID: 0}
+    - target: {fileID: 79150723916491242, guid: 4d5b333b9d4b87b4eb452addb6ef4021, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -77
+      objectReference: {fileID: 0}
+    - target: {fileID: 743907050524881744, guid: 4d5b333b9d4b87b4eb452addb6ef4021, type: 3}
+      propertyPath: m_Name
+      value: TheRifle
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4d5b333b9d4b87b4eb452addb6ef4021, type: 3}
+--- !u!4 &317530 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 79150723916491242, guid: 4d5b333b9d4b87b4eb452addb6ef4021, type: 3}
+  m_PrefabInstance: {fileID: 317529}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &34655948 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4569485995514463971, guid: ca2968763ab005a4bbd4ed827d730798, type: 3}
@@ -6110,6 +6172,7 @@ Transform:
   - {fileID: 1875325612}
   - {fileID: 62318244}
   - {fileID: 1131552595}
+  - {fileID: 317530}
   m_Father: {fileID: 1795854542}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6126,7 +6189,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weapons: []
-  keys: 1a0100001b0100001c010000
+  keys: 1a0100001b0100001c0100001d010000
   switchTime: 0.5
   wc: {fileID: 62318245}
 --- !u!1001 &697383856
@@ -8374,7 +8437,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9095507873994036745, guid: 681aa90c05bd2ca4ab4fd59b32d12d72, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 9095507873994036745, guid: 681aa90c05bd2ca4ab4fd59b32d12d72, type: 3}
       propertyPath: m_LocalScale.x
