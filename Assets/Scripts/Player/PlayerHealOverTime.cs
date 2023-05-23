@@ -8,8 +8,6 @@ public class PlayerHealOverTime : MonoBehaviour
     void Start()
     {
 
-        PlayerHealth hp;
-
 
 
 
