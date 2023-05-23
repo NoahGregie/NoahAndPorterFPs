@@ -75,7 +75,7 @@ public class SwitchWeapons : MonoBehaviour
 
     private void OnweaponsSelected()
     {
-        print("newWeapons");
+      //  print("newWeapons");
 
     }
 

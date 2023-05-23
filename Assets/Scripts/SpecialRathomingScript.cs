@@ -50,7 +50,7 @@ public class SpecialRathomingScript : MonoBehaviour
     {
         rig = GetComponent<Rigidbody>();
         pm = GetComponent<movemen>();
-        player = GameObject.Find("Player").transform;
+        player = GameObject.Find("PlayerOBJ").transform;
         animator = gameObject.GetComponent<Animator>();
         // animator.SetBool("PlayRun", false);
 
@@ -100,7 +100,7 @@ public class SpecialRathomingScript : MonoBehaviour
             //   pos.y = 1f;
             // animator.SetBool("PlayRun", false);
             transform.LookAt(target);
-             Debug.Log("stop");
+           //  Debug.Log("stop");
             
 
         }
@@ -110,7 +110,7 @@ public class SpecialRathomingScript : MonoBehaviour
         if (distance <= 8) {
             if (pause == false)
             {
-                Debug.Log("Rak-ogri Target in range!!!");
+               // Debug.Log("Rak-ogri Target in range!!!");
                 animator.SetBool("PlayAttack", true);
                 moveSpeed = 0;
                 if (!C1Running){ StartCoroutine(attackWait()); }
@@ -123,7 +123,7 @@ public class SpecialRathomingScript : MonoBehaviour
                    // checkForPlayer();
                   //  if (!C2Running) { StartCoroutine(waiter()); }
                // }
-                if(attackComplete == false) { Debug.Log("Time Skips"); }
+               // if(attackComplete == false) { Debug.Log("Time Skips"); }
             }
   
         }
@@ -175,7 +175,7 @@ public class SpecialRathomingScript : MonoBehaviour
         pause = true;
         yield return new WaitForSeconds(1.84f);
         pause = false;
-        Debug.Log("Reloaded");
+       // Debug.Log("Reloaded");
         C2Running = false;
 
     }
@@ -186,7 +186,7 @@ public class SpecialRathomingScript : MonoBehaviour
         yield return new WaitForSeconds(1.17F);
         attackComplete = true;
         yield return new WaitForSeconds(3);
-        Debug.Log("atkComplete TRUE");
+       // Debug.Log("atkComplete TRUE");
         C1Running = false;
     }
 

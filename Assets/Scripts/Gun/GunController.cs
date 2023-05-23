@@ -53,7 +53,7 @@ public class GunController : MonoBehaviour
 
    public PlayerCam pc;
     public LayerMask worldLayer;
-    int layerMask = 1 << 7;
+
     
 
     public TMP_Text text;

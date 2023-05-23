@@ -5,9 +5,7 @@ using UnityEngine;
 public class EnemySpawner : MonoBehaviour
 {
     public GameObject theEnemy;
-    public int xPos;
-    public int zPos;
-    public int yPos;
+  
     public int enemyCount;
     public GameObject finalBoss;
     public int secondEnemyCount;
@@ -33,7 +31,7 @@ public class EnemySpawner : MonoBehaviour
         {
 
             Instantiate(finalBoss, bar, Quaternion.identity, transform);
-            Destroy(gameObject);
+          //  Destroy(gameObject);
         }
     }
 
