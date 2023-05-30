@@ -12,16 +12,14 @@ public class HealthScrpitforNakaipillars : MonoBehaviour
     public TMP_Text nakai;
 
     // Start is called before the first frame update
-    private void Update()
-    {
-        nakai.SetText(nakaiPillars + "Left");
-    }
+  
     public void OnMouseDown()
     {
-
-        nakaiPillars=nakaiPillars - 1;
-      //  nakai.SetText(nakaiPillars + "Left");
-      
+        
+        nakaiPillars--;
+        nakai.SetText(nakaiPillars + "Left");
+        //  nakai.SetText(nakaiPillars + "Left");
+        Destroy(gameObject);
 
     }
 

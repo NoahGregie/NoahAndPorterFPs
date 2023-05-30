@@ -50,7 +50,7 @@ public class EnemyGerndae : MonoBehaviour
 
         //get all nearby objects and then add force to objects
 
-        Instantiate(explosioneffect, transform.position, transform.rotation,transform);
+        Instantiate(explosioneffect, transform.position, transform.rotation);
 
         Collider[] colliders = Physics.OverlapSphere(transform.position, radius);
 
